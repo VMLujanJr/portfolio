@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./public/**/*.{html,js}",
-    "./src/**/*.{html,js}"
+    "./src/**/*.{html,js}",
+    "./src/components/**/*.{html,js}"
   ],
   theme: {
     colors: {

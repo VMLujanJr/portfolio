@@ -215,7 +215,7 @@ SOFTWARE.
 - Mobile-First Approach
 - Header
   - Home Icon
-  - Portfolio
+  - Projects
     - Slider / Images
     - Description
     - Technologies Used
