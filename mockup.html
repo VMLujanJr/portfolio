@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Audiowide&family=BhuTuka+Expanded+One&family=Cutive+Mono&family=Eagle+Lake&family=Engagement&family=Ephesis&family=Gravitas+One&family=Gwendolyn:wght@400;700&family=Josefin+Sans:wght@400;600&family=Lora:wght@400;600&family=Meddon&family=Nanum+Gothic&family=Open+Sans&family=Racing+Sans+One&family=Rammetto+One&display=swap"
+        rel="stylesheet">
+    <title>Portfolio Mockup</title>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="text-c-gray bg-c-gray font-Race text-[25px] font-bold pt-6 flex justify-center basis-1/4">
+            <img src="/src/assets/images/logo_2.svg">
+        </div>
+        <nav class="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
+            <a href="#about">
+                <span>About</span>
+            </a>
+            <a href="#portfolio">
+                <span>Portfolio</span>
+            </a>
+            <a href="#resume">
+                <span>Resume</span>
+            </a>
+        </nav>
+    </header>
+    <div class="min-h-screen">
+        <main class="flex flex-col items-center">
+            <div id="section_1" class="bg-c-black">
+                <div id="parent" class="absolute mr-80 p-10">
+                    <div><span
+                            class="after:animate-none hover:after:animate-pulse after:text-c-white hover:after:text-c-yellow text-7xl after:content-['Hello'] hover:after:content-['about']"></span>
+                    </div>
+                    <div><span
+                            class="after:animate-none hover:after:animate-pulse after:text-c-blue hover:after:text-c-yellow text-7xl after:content-['I_am'] hover:after:content-['portfolio']"></span>
+                    </div>
+                    <div><span
+                            class="after:animate-none hover:after:animate-pulse after:text-c-blue hover:after:text-c-yellow text-7xl after:content-['Victor'] hover:after:content-['resume']"></span>
+                    </div>
+                </div>
+                <img id="child2" class="" src="/src/assets/images/portrait.svg">
+            </div>
+
+            <div id="section_2" class="bg-c-white text-c-black">
+                <div id="about">
+                    <h1 class="font-Aboreto text-[72px]">Victor Lujan</h1>
+                    <p class="font-Nanum text-[20px]">
+                        As a self-motivated software developer, I am searching for a reliable
+                        company that can provide a safe learning environment with the potential to establish my career
+                        in
+                        software development.
+                    </p>
+                    <p class="font-Aboreto text-[20px] font-semibold">
+                        available for hire
+                    </p>
+                </div>
+                <div id="portfolio">
+                    <h1>Portfolio</h1>
+                    <div id="pj-holder" class="flex flex-wrap">
+                        <div id="image" class="relative flex p-5">
+                            <a href="https://fierce-temple-92608.herokuapp.com/">
+                                <img src="/src/assets/images/slayers.svg" alt="an RPG named Slayers" class="w-100 h-100 hover:bg-c-transparent-black">
+                                <section class="absolute bg-c-transparent-black text-c-white top-0 left-0 w-full h-full flex flex-col justify-center items-center opacity-0 hover:opacity-100 translate-y-20 hover:translate-y-0 duration-[2000ms]">
+                                    <h4 class="text-2xl">Slayers</h4>
+                                    <p class="text-2xl">
+                                        HTML / CSS / JavaScript / Express.js
+                                    </p>
+                                </section>
+                            </a>
+                        </div>
+                        
+                        
+                        <div id="pj-1">
+                            <h2>Title</h2>
+                            <img>
+                            <p>Languages Used:</p>
+                            <p>Description of the project</p>
+                            <p>Bullet Points</p>
+                            <p>Link to Deployed Project</p>
+                        </div>
+                        <div id="pj-2">
+                            <h2>Currex</h2>
+                        </div>
+                        <div id="pj-3">
+                            <h2>Currex</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="resume">
+                    <h1>Resume</h1>
+                    This is the about me section of the website.
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-c-yellow flex flex-col justify-around">
+        <div class="flex justify-around">
+            <div>Email</div>
+            <div>GitHub</div>
+            <div>LinkedIn</div>
+        </div>
+        <div class="text-center">Copyright</div>
+    </footer>
+</body>
+
+</html>
