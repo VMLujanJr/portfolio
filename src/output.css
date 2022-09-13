@@ -625,6 +625,11 @@ video {
   background-color: rgb(3 14 18 / var(--tw-bg-opacity));
 }
 
+.bg-c-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .text-justify {
   text-align: justify;
 }
