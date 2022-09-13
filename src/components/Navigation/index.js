@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navigation() {
     return (
-        <nav class="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
+        <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
             <a href="#about">
                 <span>About</span>
             </a>
