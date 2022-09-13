@@ -1,9 +1,9 @@
 import React from 'react';
 import About from './components/About';
-/* import Navigation from './components/Navigation';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import logo from './assets/images/banner.gif'; */
+import Navigation from './components/Navigation';
+// import Projects from './components/Projects';
+// import Resume from './components/Resume';
+// import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
 
@@ -24,6 +24,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <header>
+        <Navigation></Navigation>
+      </header>
       <main>
         <About></About>
 {/*         <Navigation></Navigation>

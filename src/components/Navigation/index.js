@@ -2,9 +2,17 @@ import React from 'react';
 
 function Navigation() {
     return (
-        <section>
-            <h1 id='navigation' className='text-c-blue text-7xl'>Navigation Section</h1>
-        </section>
+        <nav class="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
+            <a href="#about">
+                <span>About</span>
+            </a>
+            <a href="#portfolio">
+                <span>Portfolio</span>
+            </a>
+            <a href="#resume">
+                <span>Resume</span>
+            </a>
+        </nav>
     );
 };
 
