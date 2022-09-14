@@ -5,7 +5,7 @@ import ResumePDF from '../../assets/images/resume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
-function Resume() {
+const Resume = () => {
     return (
         <section id='resume' className='min-h-screen justify-center items-center'>
                 <div id='resumeContainer' className='bg-c-blue px-5'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import About from './components/About';
 import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
@@ -8,14 +8,24 @@ import './App.css';
 import './output.css';
 
 function App() {
+  const [resumeSelected, setResumeSelected] = useState(false);
+  
   return (
     <div>
       <header>
-        <Navigation></Navigation>
+        <Navigation
+          resumeSelected={resumeSelected}
+          setResumeSelected={setResumeSelected}
+        ></Navigation>
       </header>
       <main>
-        <About></About>
-        <Resume></Resume>
+        {!resumeSelected ? (
+          <>
+            <About></About>
+          </>
+        ) : (
+          <Resume></Resume>
+        )}
       </main>
     </div>
   );

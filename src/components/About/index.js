@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About() {
+const About = () => {
     return (
         <section id='about' className='min-h-screen bg-c-blue flex items-center'>
             <div id='container' className='w-full bg-c-black text-c-white leading-loose flex flex-col items-center'>
