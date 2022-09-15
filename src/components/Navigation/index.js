@@ -2,6 +2,10 @@ import React from 'react';
 
 const Navigation = (props) => {
     const {
+        aboutSelected,
+        setAboutSelected,
+        portfolioSelected,
+        setPortfolioSelected,
         resumeSelected,
         setResumeSelected
     } = props;
@@ -21,13 +25,25 @@ const Navigation = (props) => {
                 <nav id='subcontainer'>
                     <ul className='flex'>
                         <li>
-                            <span onClick={() => setResumeSelected(false)}>About</span>
+                            <span onClick={() => {
+                                setAboutSelected(true)
+                                setPortfolioSelected(false)
+                                setResumeSelected(false)
+                            }}>About</span>
                         </li>
                         <li>
-                            <span>Portfolio</span>
+                            <span onClick={() => {
+                                setAboutSelected(false)
+                                setPortfolioSelected(true)
+                                setResumeSelected(false)
+                            }}>Portfolio</span>
                         </li>
                         <li>
-                            <span onClick={() => setResumeSelected(true)}>Resume</span>
+                            <span onClick={() => {
+                                setAboutSelected(false)
+                                setPortfolioSelected(false)
+                                setResumeSelected(true)
+                            }}>Resume</span>
                         </li>
                     </ul>
                 </nav>
