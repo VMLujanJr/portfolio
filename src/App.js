@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import About from './components/About';
+/* import About from './components/About'; */
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
@@ -11,7 +11,7 @@ import Projects from './components/Projects';
 
 function App() {
   const [resumeSelected, setResumeSelected] = useState(false);
-  const [introRender, setIntroRender] = useState(true);
+  const [introRender, setIntroRender] = useState(false);
 
   return (
     <div>
@@ -23,7 +23,6 @@ function App() {
         ></Navigation>
         {!resumeSelected ? (
           <>
-            <About></About>
             <Projects></Projects>
           </>
         ) : (
