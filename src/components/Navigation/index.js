@@ -7,26 +7,31 @@ const Navigation = (props) => {
     } = props;
 
     return (
-        <header>
-            <div>
-                <a href='/'>
-                    Logo Here
-                    <img src='' alt=''></img>
-                </a>
+        <header id='Navigation'>
+            <div id='container' className='League flex'>
+                <div id='subcontainer'>
+                    <a href='/'>
+                        <img
+                            src={require(`../../assets/images/thumbnails/currex.gif`)}
+                            alt="logo"
+                            className="w-100 h-100"
+                        />
+                    </a>
+                </div>
+                <nav id='subcontainer'>
+                    <ul className='flex'>
+                        <li>
+                            <span onClick={() => setResumeSelected(false)}>About</span>
+                        </li>
+                        <li>
+                            <span>Portfolio</span>
+                        </li>
+                        <li>
+                            <span onClick={() => setResumeSelected(true)}>Resume</span>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav className="font-Josefin font-bold text-[20px] flex basis-3/4 justify-around items-center">
-                <ul>
-                    <li>
-                        <span onClick={() => setResumeSelected(false)}>About</span>
-                    </li>
-                    <li>
-                        <span>Portfolio</span>
-                    </li>
-                    <li>
-                        <span onClick={() => setResumeSelected(true)}>Resume</span>
-                    </li>
-                </ul>
-            </nav>
         </header>
     );
 };

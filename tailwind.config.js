@@ -19,7 +19,7 @@ module.exports = {
       'c-black': '#030e12',
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
-      'c-transparent-black': (0, 0, 0, 0.6)
+      'c-tblack': 'rgba(0, 0, 0, 0.7)'
     },
     backgroundImage: {
       'new-logo': "url('')"
@@ -35,6 +35,7 @@ module.exports = {
       Gravitas: ['Gravitas One', 'cursive'],
       Gwen: ['Gwendolyn', 'cursive'],
       Josefin: ['Josefin Sans', 'sans-serif'],
+      League: ['League Spartan', 'sans-serif'],
       Lora: ['Lora', 'serif'],
       Meddon: ['Meddon', 'cursive'],
       Nanum: ['Nanum Gothic', 'sans-serif'],
