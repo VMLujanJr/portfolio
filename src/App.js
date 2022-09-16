@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
@@ -7,37 +7,42 @@ import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 
 function App() {
-  const [introRender, setIntroRender] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(false);
+  const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
-  
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000)
+  }, []);
+
   return (
     <div>
-      {!introRender ? (
-        <main>
-        <Navigation
-          aboutSelected={aboutSelected}
-          setAboutSelected={setAboutSelected}
-          portfolioSelected={portfolioSelected}
-          setPortfolioSelected={setPortfolioSelected}
-          resumeSelected={resumeSelected}
-          setResumeSelected={setResumeSelected}
-        ></Navigation>
-        {!resumeSelected ? (
-          <>
-            <About></About>
-            <Projects></Projects>
-          </>
-        ) : (
-          <Resume></Resume>
-        )}
-      </main>
-      ) : (
+      {loading ? (
         <Intro></Intro>
+      ) : (
+        <main>
+          <Navigation
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
+            portfolioSelected={portfolioSelected}
+            setPortfolioSelected={setPortfolioSelected}
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
+          ></Navigation>
+          {aboutSelected ? (
+            <About></About>
+          ) : portfolioSelected ? (
+            <Portfolio></Portfolio>
+          ) : (
+            <Resume></Resume>
+          )}
+        </main>
       )}
     </div>
   );

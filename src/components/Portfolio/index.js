@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         <section id='featured' className='League font-bold'>
             <h1 id='title' className='flex justify-center text-7xl'>Featured</h1>
@@ -76,4 +76,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Portfolio;
