@@ -8,23 +8,37 @@ import Resume from './components/Resume';
 import './App.css';
 import './output.css';
 import Portfolio from './components/Portfolio';
+import { useTimeoutFn } from 'react-use';
+import { Transition } from '@headlessui/react';
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+ /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false);
-    }, 5000)
+      setIsLoading(false);
+    }, 10000)
   }, []);
 
   return (
     <div>
-      {loading ? (
-        <Intro></Intro>
+      {isLoading ? (
+        /*{ <Transition
+          show={isLoading}
+          enter="transition-opacity ease-in-out duration-50"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity ease-in-out duration-150"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        > }*/
+          <Intro></Intro>
+       /*  </Transition> */
+
       ) : (
         <main>
           <Navigation
