@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 10000)
+    }, 2000)
   }, []);
 
   return (
@@ -51,11 +51,10 @@ function App() {
           ></Navigation>
           {aboutSelected ? (
             <About></About>
-          ) : portfolioSelected ? (
-            <Portfolio></Portfolio>
           ) : (
-            <Resume></Resume>
-          )}
+            <Portfolio></Portfolio>
+          )
+        }
         </main>
       )}
     </div>

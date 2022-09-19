@@ -238,3 +238,5 @@ Portfolio should link to:
 - Credly (Certification)
 - Projects
 - Email (pop up)
+
+- Click on Resume 'Nav'; modal populates whole page; close icon, View PDF, Re-size, Download.

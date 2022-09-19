@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Resume from '../Resume';
 
 const Navigation = (props) => {
     const {
@@ -9,9 +10,18 @@ const Navigation = (props) => {
         resumeSelected,
         setResumeSelected
     } = props;
+    const [isResumeOpen, setIsResumeOpen] = useState(false);
+    const toggleResume = () => {
+        setIsResumeOpen(!isResumeOpen);
+    };
 
     return (
         <header id='Navigation'>
+            {isResumeOpen && (
+                <Resume
+                    onClose={toggleResume}
+                ></Resume>
+            )}
             <div id='container' className='League flex'>
                 <div id='subcontainer'>
                     <a href='/'>
@@ -40,9 +50,7 @@ const Navigation = (props) => {
                         </li>
                         <li>
                             <span onClick={() => {
-                                setAboutSelected(false)
-                                setPortfolioSelected(false)
-                                setResumeSelected(true)
+                                toggleResume(true)
                             }}>Resume</span>
                         </li>
                     </ul>
