@@ -18,9 +18,7 @@ const Navigation = (props) => {
     return (
         <header id='Navigation'>
             {isResumeOpen && (
-                <Resume
-                    onClose={toggleResume}
-                ></Resume>
+                <Resume onClose={ toggleResume } />
             )}
             <div id='container' className='League flex'>
                 <div id='subcontainer'>
@@ -50,7 +48,7 @@ const Navigation = (props) => {
                         </li>
                         <li>
                             <span onClick={() => {
-                                toggleResume(true)
+                                toggleResume()
                             }}>Resume</span>
                         </li>
                     </ul>
