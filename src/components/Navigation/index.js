@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Resume from '../Resume';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navigation = (props) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200
+        });
+    }, []);
     const {
         aboutSelected,
         setAboutSelected,
@@ -18,9 +25,20 @@ const Navigation = (props) => {
     return (
         <header id='Navigation'>
             {isResumeOpen && (
-                <Resume onClose={ toggleResume } />
+                <Resume onClose={toggleResume} />
             )}
-            <div id='container' className='League flex'>
+            <div
+                id='container'
+                data-aos='fade-left'
+                data-aos-offset=''
+                data-aos-duration='2000'
+                data-aos-easing='ease-out'
+                data-aos-delay=''
+                data-aos-anchor=''
+                data-aos-achor-placement='top-bottom'
+                data-aos-once='false'
+                className='League flex'
+            >
                 <div id='subcontainer'>
                     <a href='/'>
                         <img

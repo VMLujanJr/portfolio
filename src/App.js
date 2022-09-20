@@ -12,7 +12,7 @@ import Portfolio from './components/Portfolio';
 import { useTimeoutFn } from 'react-use';
 import { Transition } from '@headlessui/react';
 
-function App() {
+const App = () => {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000)
+    }, 1500)
   }, []);
 
   return (
