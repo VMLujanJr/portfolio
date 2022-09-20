@@ -8,7 +8,7 @@ const About = () => {
             duration: 1200
         });
     }, []);
-    
+
     return (
         <section id='about' className='min-h-screen flex items-center League'>
             <div

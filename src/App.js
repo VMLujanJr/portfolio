@@ -17,7 +17,7 @@ const App = () => {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
- /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
+  /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
 
   useEffect(() => {
     setTimeout(() => {
@@ -37,8 +37,8 @@ const App = () => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         > }*/
-          <Intro></Intro>
-       /*  </Transition> */
+        <Intro></Intro>
+        /*  </Transition> */
 
       ) : (
         <main>
@@ -53,9 +53,11 @@ const App = () => {
           {aboutSelected ? (
             <About></About>
           ) : (
-            <Featured></Featured>
+            <Featured
+              className='z-0'
+            ></Featured>
           )
-        }
+          }
         </main>
       )}
     </div>

@@ -7,7 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const Resume = ({ onClose }) => {
     return (
-        <section id='resume' className='min-h-screen flex justify-center items-center bg-c-tblack absolute w-full'>
+        <section id='resume' className='z-10 min-h-screen flex justify-center items-center bg-c-tblack absolute w-full'>
             <div id='resumeContainer' className='bg-c-blue px-5 flex flex-col justify-center items-center max-w-screen-lg'>
                 <button type='button' onClick={ onClose } className='bg-c-yellow flex justify-end my-5 w-full'>
                     ❌
