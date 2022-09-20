@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
+import Featured from './components/Featured';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
@@ -52,7 +53,7 @@ function App() {
           {aboutSelected ? (
             <About></About>
           ) : (
-            <Portfolio></Portfolio>
+            <Featured></Featured>
           )
         }
         </main>

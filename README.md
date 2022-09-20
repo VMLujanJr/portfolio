@@ -109,7 +109,7 @@ GIVEN a single-page application portfolio for a web developer
 THEN I am presented with a page containing a header, a section for content, and a footer
 ~~~
 
-- [ ] WHEN I view the header
+- [x] WHEN I view the header
 ~~~
 THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
 ~~~
@@ -124,7 +124,7 @@ THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, an
 THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 ~~~
 
-- [ ] WHEN I load the portfolio the first time
+- [x] WHEN I load the portfolio the first time
 ~~~
 THEN the About Me title and section are selected by default
 ~~~
