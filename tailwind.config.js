@@ -62,6 +62,10 @@ module.exports = {
         'fade1': 'fade1 1.5s ease-out',
         'fade2': 'fade2 1.5s ease-out',
         'fade3': 'fade3 1.5s ease-out',
+        'slider1': 'slider1 1.5s ease-in-out',
+        'slider2': 'slider2 1.5s ease-in',
+        'bounce': 'bounce 1.5s ease-in-out infinite',
+        'bouncey': 'bouncey 1.5s ease-out infinite'
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
@@ -97,6 +101,52 @@ module.exports = {
           },
           '100%': {
             opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'slider1': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(50px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0px)'
+          }
+        },
+        'slider2': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(250px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0px)'
+          }
+        },
+        'fade-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-50px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'bounce': {
+          '0%, 100%': {
+            transform: 'translateY(0px)'
+          },
+          '50%': {
+            transform: 'translateY(50px)'
+          }
+        },
+        'bouncey': {
+          '0%, 100%': {
+            transform: 'translateY(-150px)'
+          },
+          '15%': {
             transform: 'translateY(0px)'
           }
         }
