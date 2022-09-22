@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Resume from '../Resume';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Navigation = (props) => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1200
-        });
-    }, []);
     const {
         aboutSelected,
         setAboutSelected,
@@ -27,47 +20,45 @@ const Navigation = (props) => {
             {isResumeOpen && (
                 <Resume onClose={toggleResume} />
             )}
-            <div
-                id='container'
-                data-aos='fade-left'
-                data-aos-offset=''
-                data-aos-duration='2000'
-                data-aos-easing='ease-out'
-                data-aos-delay=''
-                data-aos-anchor=''
-                data-aos-achor-placement='top-bottom'
-                data-aos-once='false'
-                className='League flex'
-            >
-                <div id='subcontainer'>
+            <div id='container' className='League flex items-center'>
+                <div id='subcontainer' className=''>
                     <a href='/'>
                         <img
                             src={require(`../../assets/images/thumbnails/currex.gif`)}
                             alt="logo"
-                            className="w-100 h-100"
+                            className="w-20"
                         />
                     </a>
                 </div>
-                <nav id='subcontainer'>
-                    <ul className='flex'>
-                        <li>
-                            <span onClick={() => {
-                                setAboutSelected(true)
-                                setPortfolioSelected(false)
-                                setResumeSelected(false)
-                            }}>About</span>
+                <nav id='subcontainer' className='bg-c-yellow w-full font-League font-bold text-5xl'>
+                    <ul className='flex justify-around'>
+                        <li className='flex'>
+                            <span
+                                onClick={() => {
+                                    setAboutSelected(true)
+                                    setPortfolioSelected(false)
+                                    setResumeSelected(false)
+                                }}
+                                className='animate-fade1'
+                            >About</span>
                         </li>
-                        <li>
-                            <span onClick={() => {
-                                setAboutSelected(false)
-                                setPortfolioSelected(true)
-                                setResumeSelected(false)
-                            }}>Portfolio</span>
+                        <li className='flex'>
+                            <span
+                                onClick={() => {
+                                    setAboutSelected(false)
+                                    setPortfolioSelected(true)
+                                    setResumeSelected(false)
+                                }}
+                                className='animate-fade2'
+                            >Portfolio</span>
                         </li>
-                        <li>
-                            <span onClick={() => {
-                                toggleResume()
-                            }}>Resume</span>
+                        <li className='flex'>
+                            <span
+                                onClick={() => {
+                                    toggleResume()
+                                }}
+                                className='animate-fade3'
+                            >Resume</span>
                         </li>
                     </ul>
                 </nav>

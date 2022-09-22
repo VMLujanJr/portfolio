@@ -44,16 +44,64 @@ module.exports = {
       Rom: ['Rommetto One', 'cursive'],
     },
     fontSize: {
-      '7xl': '5rem'
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
     },
     extend: {
+      animation: {
+        'fade1': 'fade1 1.5s ease-out',
+        'fade2': 'fade2 1.5s ease-out',
+        'fade3': 'fade3 1.5s ease-out',
+      },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
         '4xl': [
           '0 2px 2px rgba(200, 200, 150, 0.95)'
         ]
       },
-    },
-    plugins: [],
+      keyframes: {
+        'fade1': {
+          '0%, 25%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'fade2': {
+          '0%, 50%': {
+            opacity: '0',
+            transform: 'translateY(-20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'fade3': {
+          '0%, 75%': {
+            opacity: '0',
+            transform: 'translateY(-30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        }
+      },
+      plugins: [],
+    }
   }
-}
+};
