@@ -12,8 +12,9 @@ const About = () => {
                     software development.
                 </p>
                 <span className='absolute animate-bounce left-10 z-0 flex justify-center bg-c-blue rounded-full' style={{ height: '250px', width: '250px' }}></span>
-                <span className='absolute animate-bouncey right-10 z-0 flex justify-center bg-c-blue rounded-full' style={{ height: '250px', width: '250px' }}></span>
+                <span className='absolute animate-bouncey right-10 z-0 flex justify-center bg-c-blue rounded-full' style={{ height: '200px', width: '200px' }}></span>
             </div>
+            <span className='absolute animate-floaty top-0 right-0 z-0 flex justify-center' style={{ height: '0px', width: '0px', borderLeft: '100px solid transparent', borderRight: '100px solid transparent', borderBottom: '200px solid red' }}></span>
         </section>
     );
 };
