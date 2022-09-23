@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Featured from './components/Featured';
+import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
@@ -41,7 +42,7 @@ const App = () => {
         /*  </Transition> */
 
       ) : (
-        <main>
+        <div>
           <Navigation
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
@@ -50,15 +51,20 @@ const App = () => {
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
           ></Navigation>
-          {aboutSelected ? (
-            <About></About>
-          ) : (
-            <Featured
-              className='z-0'
-            ></Featured>
-          )
-          }
-        </main>
+          <main>
+            {aboutSelected ? (
+              <About></About>
+            ) : (
+              <Featured
+                className='z-0'
+              ></Featured>
+            )
+            }
+          </main>
+          <Footer
+            className='z-10'
+          ></Footer>
+        </div>
       )}
     </div>
   );

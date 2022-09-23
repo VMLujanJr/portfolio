@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Resume from '../Resume';
+import { Bars3Icon } from '@heroicons/react/24/solid';
 
 const Navigation = (props) => {
     const {
@@ -31,6 +32,7 @@ const Navigation = (props) => {
                     </a>
                 </div>
                 <nav id='menu' className='bg-c-yellow w-full font-League font-bold text-5xl'>
+                    <Bars3Icon className='w-14 h-14 hover:text-c-red active:text-' />
                     <ul className='flex justify-around'>
                         <li className='flex focus:bg-c-blue'>
                             <button
