@@ -11,7 +11,8 @@ module.exports = {
       'c-blue': '#5bccf6',
       'c-black': '#030e12',
       'c-gray': '#363636',
-      'c-white': '#FFFFFF'
+      'c-white': '#FFFFFF',
+      'c-red': '#F9403A'
     },
     backgroundColor: {
       'c-yellow': '#fcde67',
@@ -153,14 +154,11 @@ module.exports = {
         },
         'floaty': {
           '0%': {
-            transform: 'translateX(-1000px)',
+            transform: 'translateY(1000px)',
             transform: 'rotate(100deg)',
           },
-          '50%': {
-            transform: 'translateY(50px)'
-          },
           '100%': {
-            transform: 'translateY(1500px)'
+            transform: 'translateX(-1500px)'
           }
         }
       },

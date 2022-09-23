@@ -30,35 +30,38 @@ const Navigation = (props) => {
                         />
                     </a>
                 </div>
-                <nav id='subcontainer' className='bg-c-yellow w-full font-League font-bold text-5xl'>
+                <nav id='menu' className='bg-c-yellow w-full font-League font-bold text-5xl'>
                     <ul className='flex justify-around'>
-                        <li className='flex'>
-                            <span
+                        <li className='flex focus:bg-c-blue'>
+                            <button
+                                type='button'
                                 onClick={() => {
                                     setAboutSelected(true)
                                     setPortfolioSelected(false)
                                     setResumeSelected(false)
                                 }}
-                                className='animate-fade1'
-                            >About</span>
+                                className='animate-fade1 hover:text-c-blue active:text-c-white focus:underline'
+                            >About</button>
                         </li>
                         <li className='flex'>
-                            <span
+                            <button
+                                type='button'
                                 onClick={() => {
                                     setAboutSelected(false)
                                     setPortfolioSelected(true)
                                     setResumeSelected(false)
                                 }}
-                                className='animate-fade2'
-                            >Portfolio</span>
+                                className='animate-fade2 hover:text-c-blue active:text-c-white focus:underline'
+                            >Portfolio</button>
                         </li>
                         <li className='flex'>
-                            <span
+                            <button
+                                type='button'
                                 onClick={() => {
                                     toggleResume()
                                 }}
-                                className='animate-fade3'
-                            >Resume</span>
+                                className='animate-fade3 hover:text-c-blue active:text-c-white focus:underline'
+                            >Resume</button>
                         </li>
                     </ul>
                 </nav>
