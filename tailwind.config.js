@@ -66,8 +66,7 @@ module.exports = {
         'slider1': 'slider1 1.5s ease-in-out',
         'slider2': 'slider2 1.5s ease-in',
         'bounce': 'bounce 1.5s ease-in-out infinite',
-        'bouncey': 'bouncey 1.5s ease-out infinite',
-        'floaty': 'floaty 1.5s ease-out'
+        'bouncey': 'bouncey 1.5s ease-out infinite'
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
@@ -151,18 +150,9 @@ module.exports = {
           '15%': {
             transform: 'translateY(0px)'
           }
-        },
-        'floaty': {
-          '0%': {
-            transform: 'translateY(1000px)',
-            transform: 'rotate(100deg)',
-          },
-          '100%': {
-            transform: 'translateX(-1500px)'
-          }
         }
-      },
-      plugins: [],
-    }
+      }
+    },
+    plugins: [],
   }
 };

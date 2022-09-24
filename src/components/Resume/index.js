@@ -11,16 +11,16 @@ const Resume = ({ onClose }) => {
             <div id='resumeContainer' className='bg-c-blue px-5 flex flex-col justify-center items-center max-w-screen-lg'>
                 <button
                     type='button'
-                    onClick={onClose}
+                    onClick={ onClose }
                     className='font-bold text-2xl text-c-gray flex justify-end my-5 w-full hover:text-c-black active:text-c-red'>
                     X
                 </button>
                 <h3 id='title' className='text-7xl flex justify-center'>Resume</h3>
-                <Document file={ResumePDF} className='w-full'>
+                <Document file={ ResumePDF } className='w-full'>
                     <Page pageNumber={1} />
                 </Document>
                 <div className='bg-c-yellow hover:bg-c-gray hover:text-c-red my-5 p-2 rounded-md'>
-                    <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view?usp=sharing' target='_blank'>View PDF</a>
+                    <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view?usp=sharing' target='_blank' rel='noreferrer'>View PDF</a>
                 </div>
             </div>
         </section>

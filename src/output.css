@@ -583,10 +583,6 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -608,14 +604,6 @@ video {
   right: 2.5rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .right-32 {
   right: 8rem;
 }
@@ -624,12 +612,16 @@ video {
   top: 7rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .z-0 {
@@ -827,35 +819,6 @@ video {
           animation: bouncey 1.5s ease-out infinite;
 }
 
-@-webkit-keyframes floaty {
-  0% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
-  }
-
-  100% {
-    -webkit-transform: translateX(-1500px);
-            transform: translateX(-1500px);
-  }
-}
-
-@keyframes floaty {
-  0% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
-  }
-
-  100% {
-    -webkit-transform: translateX(-1500px);
-            transform: translateX(-1500px);
-  }
-}
-
-.animate-floaty {
-  -webkit-animation: floaty 1.5s ease-out;
-          animation: floaty 1.5s ease-out;
-}
-
 @-webkit-keyframes fade1 {
   0%, 25% {
     opacity: 0;
@@ -1042,10 +1005,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-5 {
