@@ -240,3 +240,18 @@ Portfolio should link to:
 - Email (pop up)
 
 - Click on Resume 'Nav'; modal populates whole page; close icon, View PDF, Re-size, Download.
+
+Chrome DevTools
+Markdown
+Git
+CSS3
+HTML5
+JavaScript
+jQuery
+MySQL
+Bootstrap
+TailwindCSS
+MongoDB
+Express.js
+React
+Node.js
