@@ -32,40 +32,42 @@ const Navigation = (props) => {
                     </a>
                 </div>
                 <nav id='menu' className='bg-c-yellow w-full font-League font-bold text-5xl'>
-                    <Bars3Icon className='w-14 h-14 hover:text-c-red active:text-' />
-                    <ul className='flex justify-around'>
-                        <li className='flex focus:bg-c-blue'>
-                            <button
-                                type='button'
-                                onClick={() => {
-                                    setAboutSelected(true)
-                                    setPortfolioSelected(false)
-                                    setResumeSelected(false)
-                                }}
-                                className='animate-fade1 hover:text-c-blue active:text-c-white focus:underline'
-                            >About</button>
-                        </li>
-                        <li className='flex'>
-                            <button
-                                type='button'
-                                onClick={() => {
-                                    setAboutSelected(false)
-                                    setPortfolioSelected(true)
-                                    setResumeSelected(false)
-                                }}
-                                className='animate-fade2 hover:text-c-blue active:text-c-white focus:underline'
-                            >Portfolio</button>
-                        </li>
-                        <li className='flex'>
-                            <button
-                                type='button'
-                                onClick={() => {
-                                    toggleResume()
-                                }}
-                                className='animate-fade3 hover:text-c-blue active:text-c-white focus:underline'
-                            >Resume</button>
-                        </li>
-                    </ul>
+                    <button type='button'><Bars3Icon className='w-14 h-14 hover:text-c-red active:text-' />dropdown</button>
+                    <div className='hidden'>
+                        <ul>
+                            <li className='flex focus:bg-c-blue'>
+                                <button
+                                    type='button'
+                                    onClick={() => {
+                                        setAboutSelected(true)
+                                        setPortfolioSelected(false)
+                                        setResumeSelected(false)
+                                    }}
+                                    className='animate-fade1 hover:text-c-blue active:text-c-white focus:underline'
+                                >About</button>
+                            </li>
+                            <li className='flex'>
+                                <button
+                                    type='button'
+                                    onClick={() => {
+                                        setAboutSelected(false)
+                                        setPortfolioSelected(true)
+                                        setResumeSelected(false)
+                                    }}
+                                    className='animate-fade2 hover:text-c-blue active:text-c-white focus:underline'
+                                >Portfolio</button>
+                            </li>
+                            <li className='flex'>
+                                <button
+                                    type='button'
+                                    onClick={() => {
+                                        toggleResume()
+                                    }}
+                                    className='animate-fade3 hover:text-c-blue active:text-c-white focus:underline'
+                                >Resume</button>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>

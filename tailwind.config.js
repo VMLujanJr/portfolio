@@ -153,6 +153,7 @@ module.exports = {
         }
       }
     },
-    plugins: [],
+    plugins: [
+    ]
   }
 };

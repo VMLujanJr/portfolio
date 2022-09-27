@@ -3,7 +3,8 @@ import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
 import Intro from './components/Intro';
-import Navigation from './components/Navigation';
+import Nav from './components/Nav';
+// import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
 import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
@@ -45,14 +46,22 @@ const App = () => {
 
       ) : (
         <div>
-          <Navigation
+          <Nav
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
             portfolioSelected={portfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
-          ></Navigation>
+          ></Nav>
+          {/* <Navigation
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
+            portfolioSelected={portfolioSelected}
+            setPortfolioSelected={setPortfolioSelected}
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
+          ></Navigation> */}
           <main>
             {aboutSelected ? (
               <>
