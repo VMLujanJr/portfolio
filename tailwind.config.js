@@ -20,6 +20,7 @@ module.exports = {
       'c-black': '#030e12',
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
+      'c-shade': '#393939',
       'c-tblack': 'rgba(0, 0, 0, 0.7)'
     },
     backgroundImage: {

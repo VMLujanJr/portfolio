@@ -6,9 +6,9 @@ import LinkedInLogo from '../../assets/images/logos/linkedin.svg';
 const Footer = () => {
     return (
         <footer className='sticky bottom-0'>
-            <ul className='flex flex-col space-y-5 p-2'>
+            <ul className='flex flex-col items-start space-y-5 p-2'>
                 <li>
-                    <a href='mailto:vmlujanjr@outlook.com'>
+                    <a href='mailto:vmlujanjr@outlook.com' target='_blank'>
                         <img src={ EmailLogo } alt='email logo' className='hover:scale-110' style={{ width: '54px', height: '54px' }} />
                     </a>
                 </li>

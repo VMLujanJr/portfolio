@@ -22,13 +22,13 @@ const Nav = (props) => {
     };
 
     return (
-        <header className='bg-c-yellow flex'>
+        <header className='flex items-center'>
             {isResumeOpen && (
-                <Resume onClose={toggleResume} />
+                <Resume onClose={ toggleResume } />
             )}
-            <Menu as="div" className="relative inline-block text-left">
+            <Menu as="div" className="relative inline-block text-left p-2">
                 <div>
-                    <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+                    <Menu.Button className="inline-flex w-full items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
                         <Bars3Icon className='w-14 h-14 hover:text-c-red active:text-c-red' aria-hidden='true' />
                     </Menu.Button>
                 </div>
@@ -100,7 +100,7 @@ const Nav = (props) => {
                     </Menu.Items>
                 </Transition>
             </Menu>
-            <div id='logo' className='flex bg-c-blue w-full justify-center items-center'>
+            <div id='logo' className='flex w-full justify-center'>
                 <a href='/'>
                     <img
                         src={require(`../../assets/images/thumbnails/currex.gif`)}
