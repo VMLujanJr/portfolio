@@ -6,7 +6,6 @@ import Intro from './components/Intro';
 import Nav from './components/Nav';
 // import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
-import Resume from './components/Resume';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
