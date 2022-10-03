@@ -18,85 +18,85 @@ const data = [
     {
         id: '1',
         name: 'Bootstrap',
-        description: '',
+        website: 'https://getbootstrap.com/',
         image: BootstrapLogo
     },
     {
         id: '2',
         name: 'CSS3',
-        description: '',
+        website: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
         image: CSS3Logo
     },
     {
         id: '3',
         name: 'ChromeDevTools',
-        description: '',
+        website: 'https://developer.chrome.com/docs/devtools/',
         image: ChromeDevToolsLogo
     },
     {
         id: '4',
         name: 'Express',
-        description: '',
+        website: 'https://expressjs.com/',
         image: ExpressLogo
     },
     {
         id: '5',
         name: 'Git',
-        description: '',
+        website: 'https://git-scm.com/',
         image: GitLogo
     },
     {
         id: '6',
         name: 'HTML5',
-        description: '',
+        website: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
         image: HTML5Logo
     },
     {
         id: '7',
         name: 'JavaScript',
-        description: '',
+        website: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         image: JavaScriptLogo
     },
     {
         id: '8',
         name: 'jQuery',
-        description: '',
+        website: 'https://jquery.com/',
         image: jQueryLogo
     },
     {
         id: '9',
         name: 'MongoDB',
-        description: '',
+        website: 'https://www.mongodb.com/',
         image: MongoDBLogo
     },
     {
         id: '10',
         name: 'Node',
-        description: '',
+        website: 'https://nodejs.org/en/',
         image: NodeLogo
     },
     {
         id: '11',
         name: 'React',
-        description: '',
+        website: 'https://reactjs.org/',
         image: ReactLogo
     },
     {
         id: '12',
         name: 'TailwindCSS',
-        description: '',
+        website: 'https://tailwindcss.com/',
         image: TailwindCSSLogo
     },
     {
         id: '13',
         name: 'Markdown',
-        description: '',
+        website: 'https://www.markdownguide.org/',
         image: MarkdownLogo
     },
     {
         id: '14',
         name: 'MySQL',
-        description: '',
+        website: 'https://www.mysql.com/',
         image: MySQLLogo
     },
 ];
@@ -106,15 +106,17 @@ const TechnologyList = () => {
         <section className='bg-c-yellow h-full font-League flex flex-col justify-top items-center'>
             <h2 className='bg-c-gray font-bold text-7xl'>Technologies</h2>
             <div className='bg-c-blue w-full grid grid-cols-3 place-items-center gap-5 max-w-xl'>
-                {data.map(({ id, name, image }) => (
-                    <div key={id} className=''>
-                        <img
-                            key={id}
-                            src={image}
-                            alt={name}
-                            className=''
-                            style={{ width: '100px', height: '100px' }}
-                        />
+                {data.map(({ id, name, website, image }) => (
+                    <div key={ id } className=''>
+                        <a href={ website } alt={ name } target='_blank'>
+                            <img
+                                key={ id }
+                                src={ image }
+                                alt={ name }
+                                className=''
+                                style={{ width: '100px', height: '100px' }}
+                            />
+                        </a>
                     </div>
                 ))}
             </div>
