@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
-import { Bars3Icon } from '@heroicons/react/24/solid';
+import { Bars3Icon } from '@heroicons/react/20/solid';
 import Resume from '../Resume';
 
 function classNames(...classes) {
@@ -17,24 +17,26 @@ const Nav = (props) => {
         setResumeSelected
     } = props;
     const [isResumeOpen, setIsResumeOpen] = useState(false);
-    const toggleResume = () => {
+    const toggleResume = (resume) => {
         setIsResumeOpen(!isResumeOpen);
     };
 
     return (
-        <header className='flex items-center'>
-            {isResumeOpen && (
-                <Resume onClose={ toggleResume } />
-            )}
-            <Menu as="div" className="relative inline-block text-left p-2">
-                <div>
-                    <Menu.Button className="inline-flex w-full items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
-                        <Bars3Icon className='w-14 h-14 hover:text-c-red active:text-c-red' aria-hidden='true' />
+        <header className='flex flex-col bg-vintage max-h-full'>
+            {
+                isResumeOpen && (
+                    <Resume onClose={toggleResume} />
+                )
+            }
+            <Menu as="div" className="lg:flex bg-c-gray text-c-black justify-start relative inline-block text-start p-2">
+                <div className="">
+                    <Menu.Button className="inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg font-medium text-gray-700 white-sm hover:bg-gray-50">
+                        <Bars3Icon className="w-14 h-14 hover:text-c-blue active:text-c-blue" aria-hidden="true" />
                     </Menu.Button>
                 </div>
 
                 <Transition
-                    as={Fragment}
+                    as={ Fragment }
                     enter="transition ease-out duration-100"
                     enterFrom="transform opacity-0 scale-95"
                     enterTo="transform opacity-100 scale-100"
@@ -42,8 +44,8 @@ const Nav = (props) => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="font-League absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <div className="py-1">
+                    <Menu.Items className="bg-c-white lg:bg-c-transparent lg:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg lg:shadow-none lg:rounded-none focus:outline-none">
+                        <div className="font-League font-bold py-1 lg:flex">
                             <Menu.Item>
                                 {({ active }) => (
                                     <a
@@ -54,8 +56,8 @@ const Nav = (props) => {
                                             setResumeSelected(false)
                                         }}
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-2xl'
+                                            active ? 'text-c-gray' : 'text-c-black',
+                                            'block px-4 py-2 text-xl animate-nav1-down lg:animate-nav1-slide'
                                         )}
                                     >
                                         About
@@ -72,8 +74,8 @@ const Nav = (props) => {
                                             setResumeSelected(false)
                                         }}
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-2xl'
+                                            active ? 'text-c-gray' : 'text-c-black',
+                                            'block px-4 py-2 text-xl animate-nav2-down lg:animate-nav2-slide'
                                         )}
                                     >
                                         Portfolio
@@ -85,11 +87,11 @@ const Nav = (props) => {
                                     <a
                                         href="#"
                                         onClick={() => {
-                                            toggleResume()
+                                            toggleResume(false)
                                         }}
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-2xl'
+                                            active ? 'text-c-gray' : 'text-c-black',
+                                            'block px-4 py-2 text-xl animate-nav3-down lg:animate-nav3-slide'
                                         )}
                                     >
                                         Resume
@@ -100,17 +102,7 @@ const Nav = (props) => {
                     </Menu.Items>
                 </Transition>
             </Menu>
-            <div id='logo' className='flex w-full justify-center'>
-                <a href='/'>
-                    <img
-                        src={require(`../../assets/images/thumbnails/currex.gif`)}
-                        alt="logo"
-                        className="w-20"
-                        style={{ height: '100px', width: '100px' }}
-                    />
-                </a>
-            </div>
-        </header>
+        </header >
     )
 };
 

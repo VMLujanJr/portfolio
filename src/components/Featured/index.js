@@ -10,9 +10,9 @@ const Featured = () => {
     }, []);
 
     return (
-        <section id='featured' className='League min-h-screen'>
-            <ul id='container' className='bg-c-yellow flex flex-col space-y-48'>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+        <section id='featured' className='font-League'>
+            <ul id='container' className='flex flex-col'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href='https://vmlujanjr.github.io/currex/' alt='currex website' target='_blank'>
                         <img
                             data-aos='zoom-in'
@@ -48,7 +48,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href='https://fierce-temple-92608.herokuapp.com/' alt='slayers website' target='_blank'>
                         <img
                             data-aos='zoom-in'
@@ -84,7 +84,7 @@ const Featured = () => {
                         </div>
                     </div>
                 </li>
-                <li className='bg-c-blue min-h-screen flex justify-center items-center'>
+                <li className='min-h-screen flex justify-center items-center'>
                     <a href='https://agile-chamber-28404.herokuapp.com/profile' alt='deep thoughts website' target='_blank'>
                         <img
                             data-aos='zoom-in'

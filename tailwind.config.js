@@ -21,7 +21,8 @@ module.exports = {
       'c-gray': '#363636',
       'c-white': '#FFFFFF',
       'c-shade': '#393939',
-      'c-tblack': 'rgba(0, 0, 0, 0.7)'
+      'c-tblack': 'rgba(0, 0, 0, 0.7)',
+      'c-transparent': 'rgba(0, 0, 0, 0.0)'
     },
     backgroundImage: {
       'new-logo': "url('')"
@@ -64,6 +65,12 @@ module.exports = {
         'fade1': 'fade1 1.5s ease-out',
         'fade2': 'fade2 1.5s ease-out',
         'fade3': 'fade3 1.5s ease-out',
+        'nav1-slide': 'nav1-slide 1.0s ease-out',
+        'nav2-slide': 'nav2-slide 1.0s ease-out',
+        'nav3-slide': 'nav3-slide 1.0s ease-out',
+        'nav1-down': 'nav1-down 1.0s ease-out',
+        'nav2-down': 'nav2-down 1.0s ease-out',
+        'nav3-down': 'nav3-down 1.0s ease-out',
         'slider1': 'slider1 1.5s ease-in-out',
         'slider2': 'slider2 1.5s ease-in',
         'bounce': 'bounce 1.5s ease-in-out infinite',
@@ -98,6 +105,66 @@ module.exports = {
         },
         'fade3': {
           '0%, 75%': {
+            opacity: '0',
+            transform: 'translateY(-30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'nav1-slide': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0px)'
+          }
+        },
+        'nav2-slide': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0px)'
+          }
+        },
+        'nav3-slide': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0px)'
+          }
+        },
+        'nav1-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'nav2-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)'
+          }
+        },
+        'nav3-down': {
+          '0%': {
             opacity: '0',
             transform: 'translateY(-30px)'
           },

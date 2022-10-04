@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Nav from './components/Nav';
 // import Navigation from './components/Navigation';
@@ -64,6 +65,7 @@ const App = () => {
           <main>
             {aboutSelected ? (
               <>
+                <Hero></Hero>
                 <About></About>
                 <TechnologyList></TechnologyList>
               </>

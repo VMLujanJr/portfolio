@@ -5,7 +5,7 @@ import LinkedInLogo from '../../assets/images/logos/linkedin.svg';
 
 const Footer = () => {
     return (
-        <footer className='sticky bottom-0'>
+        <footer className='sticky bottom-0 z-20'>
             <ul className='flex flex-col items-start space-y-5 p-2'>
                 <li>
                     <a href='mailto:vmlujanjr@outlook.com' target='_blank'>
