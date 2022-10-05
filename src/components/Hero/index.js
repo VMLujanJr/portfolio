@@ -4,6 +4,7 @@ const Hero = () => {
     return(
         <section id='hero'>
             <div className='flex flex-col w-full justify-start items-center align-top'>
+                
                 <img
                     src={require(`../../assets/images/thumbnails/currex.gif`)}
                     alt="hero"

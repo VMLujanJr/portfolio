@@ -5,12 +5,10 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Nav from './components/Nav';
-// import Navigation from './components/Navigation';
 // import Projects from './components/Projects';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
-import Portfolio from './components/Portfolio';
 import { useTimeoutFn } from 'react-use';
 import { Transition } from '@headlessui/react';
 import TechnologyList from './components/TechnologyList';
@@ -62,7 +60,7 @@ const App = () => {
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
           ></Navigation> */}
-          <main>
+          <main className='divide-y divide-dashed'>
             {aboutSelected ? (
               <>
                 <Hero></Hero>
