@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section id='about' className='min-h-screen flex items-center font-League'>
+        <section id='about' className='min-h-screen flex items-center'>
             <div id='container' className='absolute w-full flex flex-col items-center'>
                 <h1 className='z-10 animate-slider1 font-bold text-7xl'>Victor Lujan</h1>
                 <p className="z-10 animate-slider2 font-Nanum text-xl bg-c-yellow rounded-xl p-3 text-justify max-w-sm md:max-w-md lg:max-w-lg">

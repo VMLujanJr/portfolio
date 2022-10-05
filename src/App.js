@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='font-League'>
       {isLoading ? (
         /*{ <Transition
           show={isLoading}
@@ -63,7 +63,6 @@ const App = () => {
           <main className='divide-y divide-dashed'>
             {aboutSelected ? (
               <>
-                <Hero></Hero>
                 <About></About>
                 <TechnologyList></TechnologyList>
               </>

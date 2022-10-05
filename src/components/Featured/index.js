@@ -43,7 +43,7 @@ const Featured = () => {
     ];
 
     return (
-        <section id='featured' className='font-League'>
+        <section id='featured'>
             <ul id='container' className='flex flex-col'>
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
                     <li key={ id } className='min-h-screen flex justify-center items-center'>
@@ -74,10 +74,10 @@ const Featured = () => {
                             className='relative right-32 top-28'
                         >
                             <h2 className='flex justify-end text-7xl font-bold'>{ name }</h2>
-                            <p className='flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 max-w-xl'>
+                            <p className='font-Nanum flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 max-w-xl'>
                                 { description }
                             </p>
-                            <div className='flex justify-center'>
+                            <div className='font-Nanum flex justify-center'>
                                 { technologies }
                             </div>
                         </div>
