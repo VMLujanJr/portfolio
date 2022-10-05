@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
+/* import Hero from './components/Hero'; */
 import Intro from './components/Intro';
 import Nav from './components/Nav';
-// import Projects from './components/Projects';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
@@ -28,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='font-League'>
+    <div className='font-League inline-block'>
       {isLoading ? (
         /*{ <Transition
           show={isLoading}

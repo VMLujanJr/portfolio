@@ -22,7 +22,7 @@ const Nav = (props) => {
     };
 
     return (
-        <header className='flex flex-col max-h-full'>
+        <header className='w-full flex flex-col max-h-full'>
             {
                 isResumeOpen && (
                     <Resume onClose={ toggleResume } />
