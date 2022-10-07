@@ -105,7 +105,7 @@ const TechnologyList = () => {
     return (
         <section className='h-full flex flex-col justify-top items-center'>
             <h2 className='font-bold text-4xl'>Technologies</h2>
-            <div className='w-full grid grid-cols-3 place-items-center gap-5 max-w-xl'>
+            <div className='w-4/5 grid grid-cols-3 place-items-center gap-5 max-w-xl'>
                 {data.map(({ id, name, website, image }) => (
                     <div key={ id } className=''>
                         <a href={ website } alt={ name } target='_blank'>
