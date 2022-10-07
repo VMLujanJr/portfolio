@@ -671,6 +671,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1100,21 +1104,21 @@ video {
   background-color: rgb(57 57 57 / var(--tw-bg-opacity));
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-1 {
   padding: 0.25rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -1148,16 +1152,20 @@ video {
   font-family: Nanum Gothic, sans-serif;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
 .text-7xl {
   font-size: 5rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
 }
 
 .text-2xl {
@@ -1298,6 +1306,18 @@ video {
   color: rgb(249 64 58 / var(--tw-text-opacity));
 }
 
+@media (min-width: 360px) {
+  .mobile\:inline {
+    display: inline;
+  }
+}
+
+@media (min-width: 575px) {
+  .tablet\:max-w-md {
+    max-width: 28rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .laptop\:relative {
     position: relative;
@@ -1305,6 +1325,10 @@ video {
 
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:max-w-lg {
+    max-width: 32rem;
   }
 
   @-webkit-keyframes nav1-slide {
@@ -1412,6 +1436,14 @@ video {
 
   .laptop\:bg-c-transparent {
     background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  .laptop\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .laptop\:text-xl {
+    font-size: 1.25rem;
   }
 
   .laptop\:text-c-white {

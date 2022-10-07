@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='font-League inline-block'>
+    <div className='font-League inline'>
       {isLoading ? (
         /*{ <Transition
           show={isLoading}
@@ -42,7 +42,7 @@ const App = () => {
         /*  </Transition> */
 
       ) : (
-        <div>
+        <div className='w-full'>
           <Nav
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
