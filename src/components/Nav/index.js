@@ -22,13 +22,13 @@ const Nav = (props) => {
     };
 
     return (
-        <header className='w-full flex flex-col max-h-full'>
+        <header className='flex flex-col max-h-full w-screen'>
             {
                 isResumeOpen && (
                     <Resume onClose={ toggleResume } />
                 )
             }
-            <Menu as='div' className='lg:flex bg-c-gray text-c-black justify-start relative p-2'>
+            <Menu as='div' className='laptop:flex bg-c-gray text-c-black justify-start relative p-2'>
                 <div className=''>
                     <Menu.Button className='inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'>
                         <Bars3Icon className='w-14 h-14 hover:text-c-blue active:text-c-blue' aria-hidden='true' />
@@ -44,8 +44,8 @@ const Nav = (props) => {
                     leaveFrom='transform opacity-100 scale-100'
                     leaveTo='transform opacity-0 scale-95'
                 >
-                    <Menu.Items className='bg-c-white lg:bg-c-transparent lg:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg lg:shadow-none lg:rounded-none focus:outline-none'>
-                        <div className='font-League font-bold py-1 lg:flex'>
+                    <Menu.Items className='bg-c-white laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none'>
+                        <div className='font-League font-bold py-1 laptop:flex'>
                             <Menu.Item>
                                 {({ active }) => (
                                     <a
@@ -57,7 +57,7 @@ const Nav = (props) => {
                                         }}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
-                                            'block px-4 py-2 text-xl animate-nav1-down lg:animate-nav1-slide lg:text-c-white active:text-c-yellow'
+                                            'block px-4 py-2 text-xl animate-nav1-down laptop:animate-nav1-slide laptop:text-c-white active:text-c-yellow'
                                         )}
                                     >
                                         About
@@ -75,7 +75,7 @@ const Nav = (props) => {
                                         }}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
-                                            'block px-4 py-2 text-xl animate-nav2-down lg:animate-nav2-slide lg:text-c-white active:text-c-yellow'
+                                            'block px-4 py-2 text-xl animate-nav2-down laptop:animate-nav2-slide laptop:text-c-white active:text-c-yellow'
                                         )}
                                     >
                                         Portfolio
@@ -91,7 +91,7 @@ const Nav = (props) => {
                                         }}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
-                                            'block px-4 py-2 text-xl animate-nav3-down lg:animate-nav3-slide lg:text-c-white active:text-c-yellow'
+                                            'block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide laptop:text-c-white active:text-c-yellow'
                                         )}
                                     >
                                         Resume
