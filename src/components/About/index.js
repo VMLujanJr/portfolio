@@ -3,9 +3,9 @@ import React from 'react';
 const About = () => {
     return (
         <section id='about' className='min-h-screen flex justify-center items-center px-2'>
-            <div id='container' className='w-full flex flex-col justify-center items-center'>
+            <div id='container' className='w-3/5 flex flex-col justify-center items-center'>
                 <h1 className='z-10 animate-slider1 font-bold text-4xl laptop:text-7xl'>Victor Lujan</h1>
-                <p className="z-10 animate-slider2 font-Nanum text-lg laptop:text-xl bg-c-yellow rounded-xl p-2 text-justify max-w-sm tablet:max-w-md laptop:max-w-lg">
+                <p className="z-10 animate-slider2 font-Nanum text-sm laptop:text-xl bg-c-yellow rounded-xl p-2 text-justify max-w-sm tablet:max-w-md laptop:max-w-lg">
                     As a self-motivated software developer, I am searching for a reliable
                     company that can provide a safe learning environment with the potential to establish my career
                     in
