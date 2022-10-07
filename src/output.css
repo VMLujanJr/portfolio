@@ -691,6 +691,10 @@ video {
   height: 100%;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -699,12 +703,22 @@ video {
   max-height: 100vh;
 }
 
+.min-h-fit {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-screen {
@@ -723,24 +737,8 @@ video {
   width: 12rem;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
-.w-4\/5 {
-  width: 80%;
+.w-\[50px\] {
+  width: 50px;
 }
 
 .max-w-sm {
@@ -1172,12 +1170,16 @@ video {
   font-size: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-sm {
+  font-size: .875rem;
 }
 
 .text-7xl {
   font-size: 5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
 }
 
 .text-xl {
@@ -1186,10 +1188,6 @@ video {
 
 .text-2xl {
   font-size: 1.5rem;
-}
-
-.text-sm {
-  font-size: .875rem;
 }
 
 .font-bold {
@@ -1339,6 +1337,14 @@ video {
 
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .laptop\:w-\[100px\] {
+    width: 100px;
   }
 
   .laptop\:max-w-lg {
