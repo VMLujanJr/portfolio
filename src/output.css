@@ -602,14 +602,6 @@ video {
   right: 2.5rem;
 }
 
-.right-32 {
-  right: 8rem;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -743,12 +735,40 @@ video {
   width: 50px;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-min {
+  max-width: -webkit-min-content;
+  max-width: min-content;
+}
+
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: max-content;
+}
+
+.max-w-fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .origin-top-right {
@@ -1196,6 +1216,10 @@ video {
   font-weight: 700;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-c-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1337,6 +1361,14 @@ video {
     position: relative;
   }
 
+  .laptop\:right-32 {
+    right: 8rem;
+  }
+
+  .laptop\:top-28 {
+    top: 7rem;
+  }
+
   .laptop\:flex {
     display: flex;
   }
@@ -1351,6 +1383,10 @@ video {
 
   .laptop\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .laptop\:max-w-xl {
+    max-width: 36rem;
   }
 
   @-webkit-keyframes nav1-slide {
