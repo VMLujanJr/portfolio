@@ -46,9 +46,9 @@ const Featured = () => {
         <section id='featured' className=''>
             <ul id='container' className='customViewHeight flex flex-col items-center'>
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
-                    <li key={id} className='max-w-xs flex flex-col justify-center items-center'>
+                    <li key={id} className='max-w-xs flex-col flex justify-center items-center'>
                         <h2 className='flex text-4xl font-bold'>{name}</h2>
-                        <a href={website} alt={alt} target='_blank'>
+                        <a href={website} alt={alt} target='_blank' className=''>
                             <img
                                 data-aos='zoom-in'
                                 data-aos-offset='0'
@@ -60,7 +60,7 @@ const Featured = () => {
                                 data-aos-once='false'
                                 src={image}
                                 alt={alt}
-                                className='flex m-2 p-1 ring-c-black ring-4 rounded-3xl'
+                                className='flex my-2 p-1 ring-c-black ring-4 rounded-3xl'
                             ></img>
                         </a>
                         <div
@@ -72,7 +72,7 @@ const Featured = () => {
                             data-aos-anchor=''
                             data-aos-achor-placement='top-bottom'
                             data-aos-once='false'
-                            className='relative w-4/5 laptop:right-32 laptop:top-28'
+                            className='laptop:relative w-4/5 laptop:right-32 laptop:top-28'
                         >
                             <p className='font-Nanum text-sm flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 laptop:max-w-xl'>
                                 {description}

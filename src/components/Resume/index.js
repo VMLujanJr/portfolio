@@ -16,7 +16,7 @@ const Resume = ({ onClose }) => {
                     <span className='bg-c-blue w-48 flex justify-start'>X</span>
                 </button>
                 <Document file={ ResumePDF } className={'custom-scroll'}>
-                    <Page pageNumber={1} scale={1.5} />
+                    <Page pageNumber={1} scale={0.6} />
                 </Document>
                 <div className='bg-c-yellow hover:bg-c-gray hover:text-c-red my-5 p-2 rounded-md'>
                     <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view?usp=sharing' target='_blank' rel='noreferrer' className='font-Nanum'>View PDF</a>
