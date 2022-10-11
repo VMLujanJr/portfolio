@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
-/* import Resume from '../Resume'; */
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -13,21 +12,10 @@ const Nav = (props) => {
         setAboutSelected,
         portfolioSelected,
         setPortfolioSelected,
-        /* resumeSelected,
-        setResumeSelected */
     } = props;
-    /* const [isResumeOpen, setIsResumeOpen] = useState(false);
-    const toggleResume = (resume) => {
-        setIsResumeOpen(!isResumeOpen);
-    }; */
 
     return (
         <header className='flex flex-col max-h-full w-screen'>
-            {/* {
-                isResumeOpen && (
-                    <Resume onClose={ toggleResume } />
-                )
-            } */}
             <Menu as='div' className='laptop:flex bg-c-gray text-c-black justify-start relative p-2'>
                 <div className=''>
                     <Menu.Button className='inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'>
@@ -53,7 +41,6 @@ const Nav = (props) => {
                                         onClick={() => {
                                             setAboutSelected(true)
                                             setPortfolioSelected(false)
-                                            /* setResumeSelected(false) */
                                         }}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
@@ -71,7 +58,6 @@ const Nav = (props) => {
                                         onClick={() => {
                                             setAboutSelected(false)
                                             setPortfolioSelected(true)
-                                           /*  setResumeSelected(false) */
                                         }}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
@@ -86,9 +72,6 @@ const Nav = (props) => {
                                 {({ active }) => (
                                     <a
                                         href={'https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view'}
-                                        /* onClick={() => {
-                                            toggleResume(false)
-                                        }} */
                                         target={'_blank'}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
