@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-.custom-scroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 /* Select every 1st list item starting from the 2nd*/
 .customViewHeight li:nth-child(1n + 1) {
   min-height: 80vh;

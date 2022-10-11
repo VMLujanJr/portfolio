@@ -15,7 +15,7 @@ import TechnologyList from './components/TechnologyList';
 const App = () => {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
+ /*  const [resumeSelected, setResumeSelected] = useState(false); */
   const [isLoading, setIsLoading] = useState(true);
   const [isMenuActive, setIsMenuActive] = useState(true);
   /*  const [,,resetIsShowing] = useTimeoutFn(() => setIsLoading(true), 50) */
@@ -48,8 +48,8 @@ const App = () => {
             setAboutSelected={setAboutSelected}
             portfolioSelected={portfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
-            resumeSelected={resumeSelected}
-            setResumeSelected={setResumeSelected}
+            /* resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected} */
           ></Nav>
           {/* <Navigation
             aboutSelected={aboutSelected}
