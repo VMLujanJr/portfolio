@@ -4,7 +4,7 @@ import Featured from './components/Featured';
 import Footer from './components/Footer';
 /* import Hero from './components/Hero'; */
 import Intro from './components/Intro';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
 // import logo from './assets/images/banner.gif';
 import './App.css';
 import './output.css';
@@ -42,18 +42,12 @@ const App = () => {
 
       ) : (
         <div className='w-full'>
-          <Nav
+          <Navigation
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
             portfolioSelected={portfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
-          ></Nav>
-          {/* <Navigation
-            aboutSelected={aboutSelected}
-            setAboutSelected={setAboutSelected}
-            portfolioSelected={portfolioSelected}
-            setPortfolioSelected={setPortfolioSelected}
-          ></Navigation> */}
+          ></Navigation>
           <main className='divide-y divide-dashed'>
             {aboutSelected ? (
               <>

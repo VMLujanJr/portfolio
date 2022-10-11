@@ -6,7 +6,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Nav = (props) => {
+const Navigation = (props) => {
     const {
         aboutSelected,
         setAboutSelected,
@@ -90,4 +90,4 @@ const Nav = (props) => {
     )
 };
 
-export default Nav;
+export default Navigation;
