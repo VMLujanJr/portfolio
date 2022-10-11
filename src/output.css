@@ -577,10 +577,6 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -614,18 +610,6 @@ video {
   left: 0.5rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -638,18 +622,9 @@ video {
   z-index: 20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mt-2 {
@@ -696,10 +671,6 @@ video {
   max-height: 100%;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -726,10 +697,6 @@ video {
 
 .w-auto {
   width: auto;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-\[50px\] {
@@ -1031,10 +998,6 @@ video {
   justify-content: flex-start;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -1108,15 +1071,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-c-tblack {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.bg-c-shade {
-  --tw-bg-opacity: 1;
-  background-color: rgb(57 57 57 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1183,10 +1137,6 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
 }
 
 .font-bold {
@@ -1287,24 +1237,9 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-c-gray:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(54 54 54 / var(--tw-bg-opacity));
-}
-
 .hover\:text-c-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(91 204 246 / var(--tw-text-opacity));
-}
-
-.hover\:text-c-black:hover {
-  --tw-text-opacity: 1;
-  color: rgb(3 14 18 / var(--tw-text-opacity));
-}
-
-.hover\:text-c-red:hover {
-  --tw-text-opacity: 1;
-  color: rgb(249 64 58 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1320,11 +1255,6 @@ video {
 .active\:text-c-yellow:active {
   --tw-text-opacity: 1;
   color: rgb(252 222 103 / var(--tw-text-opacity));
-}
-
-.active\:text-c-red:active {
-  --tw-text-opacity: 1;
-  color: rgb(249 64 58 / var(--tw-text-opacity));
 }
 
 @media (min-width: 575px) {

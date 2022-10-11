@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
@@ -8,9 +8,9 @@ function classNames(...classes) {
 
 const Navigation = (props) => {
     const {
-        aboutSelected,
+        /* aboutSelected, */
         setAboutSelected,
-        portfolioSelected,
+        /* portfolioSelected, */
         setPortfolioSelected,
     } = props;
 
@@ -36,8 +36,8 @@ const Navigation = (props) => {
                         <div className='font-League font-bold py-1 laptop:flex'>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a
-                                        href='#'
+                                    <button
+                                        type='button'
                                         onClick={() => {
                                             setAboutSelected(true)
                                             setPortfolioSelected(false)
@@ -48,13 +48,13 @@ const Navigation = (props) => {
                                         )}
                                     >
                                         About
-                                    </a>
+                                    </button>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a
-                                        href='#'
+                                    <button
+                                        type='button'
                                         onClick={() => {
                                             setAboutSelected(false)
                                             setPortfolioSelected(true)
@@ -65,7 +65,7 @@ const Navigation = (props) => {
                                         )}
                                     >
                                         Portfolio
-                                    </a>
+                                    </button>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
@@ -73,6 +73,7 @@ const Navigation = (props) => {
                                     <a
                                         href={'https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view'}
                                         target={'_blank'}
+                                        rel={'noreferrer'}
                                         className={ classNames(
                                             active ? 'text-c-gray' : 'text-c-black',
                                             'block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide laptop:text-c-white active:text-c-yellow'
