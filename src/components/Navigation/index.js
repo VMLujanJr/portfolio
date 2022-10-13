@@ -46,7 +46,7 @@ const Navigation = (props) => {
                                 leaveFrom='transform opacity-100 scale-100'
                                 leaveTo='transform opacity-0 scale-95'
                             >
-                                <Menu.Items className='bg-c-white laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none'>
+                                <Menu.Items static className='ui-open:bg-c-blue bg-c-white laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none'>
                                     <div className='font-League font-bold py-1 laptop:flex'>
                                         {menuItems.map((item) => (
                                             <Menu.Item key={item.href} as={Fragment}>
@@ -72,7 +72,7 @@ const Navigation = (props) => {
                         )}
                     </>
                 )}
-            </Menu>
+            </Menu>                                         
         </header>
     )
 };

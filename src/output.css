@@ -577,6 +577,10 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1162,6 +1166,11 @@ video {
   color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
+.hover\:text-c-gray:hover {
+  --tw-text-opacity: 1;
+  color: rgb(54 54 54 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1175,6 +1184,11 @@ video {
 .active\:text-c-yellow:active {
   --tw-text-opacity: 1;
   color: rgb(252 222 103 / var(--tw-text-opacity));
+}
+
+.active\:text-c-gray:active {
+  --tw-text-opacity: 1;
+  color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
 @media (min-width: 575px) {
