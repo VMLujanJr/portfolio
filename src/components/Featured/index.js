@@ -48,7 +48,7 @@ const Featured = () => {
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
                     <li key={id} className='max-w-xs flex-col flex justify-center items-center'>
                         <h2 className='flex text-4xl font-bold'>{name}</h2>
-                        <a href={website} alt={alt} target='_blank' className=''>
+                        <a href={website} alt={alt} target='_blank' rel='noreferrer' className=''>
                             <img
                                 data-aos='zoom-in'
                                 data-aos-offset='0'

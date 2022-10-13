@@ -10,8 +10,8 @@ import './output.css';
 import TechnologyList from './components/TechnologyList';
 
 const App = () => {
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [isAboutSelected, setAboutSelected] = useState(true);
+  const [isPortfolioSelected, setPortfolioSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -23,36 +23,25 @@ const App = () => {
   return (
     <div className='font-League inline'>
       {isLoading ? (
-        /*{ <Transition
-          show={isLoading}
-          enter="transition-opacity ease-in-out duration-50"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity ease-in-out duration-150"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        > }*/
         <Intro></Intro>
-        /*  </Transition> */
-
       ) : (
         <div className='w-full'>
           <Navigation
-            aboutSelected={aboutSelected}
+            isAboutSelected={isAboutSelected}
             setAboutSelected={setAboutSelected}
-            portfolioSelected={portfolioSelected}
+            isPortfolioSelected={isPortfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
           ></Navigation>
           <main className='divide-y divide-dashed'>
-            {aboutSelected ? (
+            {isAboutSelected ? (
               <>
                 <About></About>
                 <TechnologyList></TechnologyList>
               </>
+            ) : isPortfolioSelected ? (
+              <Featured className='z-0'></Featured>
             ) : (
-              <Featured
-                className='z-0'
-              ></Featured>
+              <p>404 Page Not Found</p>
             )
             }
           </main>
