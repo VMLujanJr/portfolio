@@ -11,7 +11,7 @@ module.exports = {
       'mobile': '360px',
       'tablet': '575px',
       'laptop': '1024px',
-      'desktop': '1280px'
+      'desktop': '1280px',
     },
     colors: {
       'c-yellow': '#fcde67',

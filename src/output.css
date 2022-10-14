@@ -577,6 +577,17 @@ video {
   }
 }
 
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 .static {
   position: static;
 }
@@ -604,6 +615,10 @@ video {
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.top-24 {
+  top: 6rem;
 }
 
 .left-2\.5 {
@@ -1065,16 +1080,16 @@ video {
   font-size: .875rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
 .text-7xl {
   font-size: 5rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
 }
 
 .font-bold {
@@ -1098,6 +1113,11 @@ video {
 .text-c-gray {
   --tw-text-opacity: 1;
   color: rgb(54 54 54 / var(--tw-text-opacity));
+}
+
+.text-c-red {
+  --tw-text-opacity: 1;
+  color: rgb(249 64 58 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1166,19 +1186,9 @@ video {
   color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
-.hover\:text-c-gray:hover {
-  --tw-text-opacity: 1;
-  color: rgb(54 54 54 / var(--tw-text-opacity));
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.active\:text-c-blue:active {
-  --tw-text-opacity: 1;
-  color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
 .active\:text-c-yellow:active {
@@ -1186,9 +1196,9 @@ video {
   color: rgb(252 222 103 / var(--tw-text-opacity));
 }
 
-.active\:text-c-gray:active {
+.active\:text-c-blue:active {
   --tw-text-opacity: 1;
-  color: rgb(54 54 54 / var(--tw-text-opacity));
+  color: rgb(91 204 246 / var(--tw-text-opacity));
 }
 
 @media (min-width: 575px) {
@@ -1198,6 +1208,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .laptop\:sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
   .laptop\:relative {
     position: relative;
   }
@@ -1210,8 +1232,20 @@ video {
     top: 7rem;
   }
 
+  .laptop\:top-0 {
+    top: 0px;
+  }
+
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:contents {
+    display: contents;
+  }
+
+  .laptop\:hidden {
+    display: none;
   }
 
   .laptop\:h-\[100px\] {
@@ -1282,6 +1316,11 @@ video {
   .laptop\:text-c-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-c-black {
+    --tw-text-opacity: 1;
+    color: rgb(3 14 18 / var(--tw-text-opacity));
   }
 
   .laptop\:shadow-none {

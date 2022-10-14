@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
+import Header from './components/Header';
 /* import Hero from './components/Hero'; */
 import Intro from './components/Intro';
 import Menu from './components/Menu';
-import Navigation from './components/Navigation';
+/* import Navigation from './components/Navigation'; */
+import NewMenu from './components/NewMenu';
 import './App.css';
 import './output.css';
 import TechnologyList from './components/TechnologyList';
@@ -13,6 +15,7 @@ import TechnologyList from './components/TechnologyList';
 const App = () => {
   const [isAboutSelected, setAboutSelected] = useState(true);
   const [isPortfolioSelected, setPortfolioSelected] = useState(false);
+  const [isMenuSelected, setMenuSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -33,12 +36,16 @@ const App = () => {
             isPortfolioSelected={isPortfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
           ></Navigation> */}
-          <Menu
+          {/* <Menu
             isAboutSelected={isAboutSelected}
             setAboutSelected={setAboutSelected}
             isPortfolioSelected={isPortfolioSelected}
             setPortfolioSelected={setPortfolioSelected}
-          ></Menu>
+            isMenuSelected={isMenuSelected}
+            setMenuSelected={setMenuSelected}
+          ></Menu> */}
+          {/* <NewMenu></NewMenu> */}
+          <Header></Header>
           <main className='divide-y divide-dashed'>
             {isAboutSelected ? (
               <>

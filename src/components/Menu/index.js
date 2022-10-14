@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
@@ -7,6 +7,18 @@ const Menu = (props) => {
         setAboutSelected,
         setPortfolioSelected,
     } = props;
+
+    const [isMenuToggled, setMenuToggle] = useState(true); // ALWAYS ON
+    const toggleMenu = () => {
+        setMenuToggle(toggle => !toggle);
+    };
+    const displayMenu = () => {
+        (isMenuToggled === 'false' && window.innerWidth >= 1024) ? (
+            toggleMenu()
+        ) : (
+            <p>nothing</p>
+        )
+    };
 
     const aboutHandler = () => {
         setAboutSelected(true);
@@ -25,12 +37,12 @@ const Menu = (props) => {
     ];
 
     return (
-        <header className='flex flex-col max-h-full w-screen'>
-            <div className='laptop:flex bg-c-gray text-c-black justify-start relative p-2'>
-                <nav className='flex flex-col max-h-full w-screen'>
-                    <button className='inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'>
-                        <Bars3Icon className='w-14 h-14 hover:text-c-blue active:text-c-blue' aria-hidden='true' />
-                    </button>
+        <div className='laptop:flex bg-c-gray text-c-black justify-start relative p-2'>
+            <nav className='flex max-h-full w-screen'>
+                <button type='button' onClick={toggleMenu} className='laptop:hidden inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'>
+                    <Bars3Icon className='w-14 h-14 hover:text-c-blue active:text-c-blue' aria-hidden='true' />
+                </button>
+                {/* {isMenuToggled && ( */}
                     <Transition
                         as={Fragment}
                         show={true}
@@ -41,7 +53,7 @@ const Menu = (props) => {
                         leaveFrom='transform opacity-100 scale-100'
                         leaveTo='transform opacity-0 scale-95'
                     >
-                        <div className='bg-c-white laptop:bg-c-transparent laptop:relative absolute left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none'>
+                        <div className='not-sr-only laptop:sr-only bg-c-white laptop:contents laptop:bg-c-transparent laptop:relative absolute top-24 laptop:top-0 left-2.5 z-10 mt-2 w-auto origin-top-right rounded-md shadow-lg laptop:shadow-none laptop:rounded-none focus:outline-none'>
                             <ul className='font-League font-bold py-1 laptop:flex'>
                                 {menuItems.map((item) => (
                                     <li key={item.href}>
@@ -50,7 +62,7 @@ const Menu = (props) => {
                                             target={item.target}
                                             rel={'noreferrer'}
                                             onClick={item.function}
-                                            className='text-c-black hover:text-c-gray block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide laptop:text-c-white active:text-c-yellow'
+                                            className='text-c-black hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide laptop:text-c-white active:text-c-yellow'
                                         >
                                             {item.label}
                                         </a>
@@ -59,9 +71,10 @@ const Menu = (props) => {
                             </ul>
                         </div>
                     </Transition>
-                </nav>
-            </div>
-        </header>
+            {/*     )
+                } */}
+            </nav>
+        </div>
     )
 };
 
