@@ -6,7 +6,12 @@ const NavigationBar = () => {
     return (
         <nav>
             <ul id='menuItems' className='text-c-red'>
+                {/* .map thru menu Array */}
                 {menuItems.map((menu, index) => {
+                    
+                    /* ICON SHOULD RENDER BY DEFAULT */
+                    
+                    /* send content to MenuItems via prop drill 'items={menu}', then return */
                     return <MenuItems items={menu} key={index} />
                 })}
             </ul>

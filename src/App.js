@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Featured from './components/Featured';
 import Footer from './components/Footer';

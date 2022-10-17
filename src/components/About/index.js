@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section id='about' className='min-h-screen flex justify-center items-center px-2'>
             <div id='container' className='w-4/5 flex flex-col justify-center items-center'>
-                <h1 className='z-10 animate-slider1 font-bold text-4xl laptop:text-7xl'>Victor Lujan</h1>
+                <h1 className='z-10 animate-slider1 font-bold text-4xl laptop:text-7xl'>About</h1>
                 <p className="z-10 animate-slider2 font-Nanum text-sm laptop:text-xl bg-c-yellow rounded-xl p-2 text-justify max-w-sm tablet:max-w-md laptop:max-w-lg">
                     As a self-motivated software developer, I am searching for a reliable
                     company that can provide a safe learning environment with the potential to establish my career

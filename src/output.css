@@ -670,6 +670,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[35px\] {
   height: 35px;
 }
