@@ -1,10 +1,10 @@
 import React from 'react';
 import Featured from '../components/Featured';
 
-const Featured = () => {
+const FeaturedPage = () => {
     return (
         <Featured />
     );
 };
 
-export default Featured;
+export default FeaturedPage;

@@ -9,14 +9,12 @@ export const menuItems = [
                 url: '/about',
                 target: '_self',
                 relation: 'no-refresher'
-                /* function: aboutHandler */
             },
             {
                 title: 'Portfolio',
                 url: '/portfolio',
                 target: '_self',
                 relation: 'no-refresher'
-                /* function: portfolioHandler */
             },
             {
                 title: 'Resume',

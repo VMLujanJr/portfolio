@@ -6,10 +6,10 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 /* Pages */
-import About from './pages/About.js';
-import Featured from './pages/Featured.js';
-import Intro from './pages/Intro.js';
-import NoMatch from './pages/NoMatch.js';
+import AboutPage from './pages/AboutPage.js';
+import FeaturedPage from './pages/FeaturedPage.js';
+import IntroPage from './pages/IntroPage.js';
+import NoMatchPage from './pages/NoMatchPage.js';
 
 /* Styles */
 import './App.css';
@@ -27,7 +27,7 @@ const App = () => {
   return (
     <Router>
       {isLoading ? (
-        <Intro />
+        <IntroPage />
       ) : (
         <div id='main-container'>
           <Header />
@@ -38,16 +38,16 @@ const App = () => {
               element={ <Intro /> }
             /> */}
               <Route
-                path='/about'
-                element={<About />}
+                path='/'
+                element={<AboutPage />}
               />
               <Route
-                path='/featured'
-                element={<Featured />}
+                path='/portfolio'
+                element={<FeaturedPage />}
               />
               <Route
                 path='*'
-                element={<NoMatch />}
+                element={<NoMatchPage />}
               />
             </Routes>
           </div>

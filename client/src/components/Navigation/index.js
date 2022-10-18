@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react';
+/* import { Menu, Transition } from '@headlessui/react'; */
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
 const Navigation = (props) => {
+    
+    /* FUNCTION MIGHT BE USEFUL */
     const classNames = (...classes) => {
         return classes.filter(Boolean).join(' ');
     };
+
     const {
         setAboutSelected,
         setPortfolioSelected,
@@ -56,6 +59,8 @@ const Navigation = (props) => {
                                                         target={item.target}
                                                         rel={'noreferrer'}
                                                         onClick={item.function}
+                                                        
+                                                        /* FUNCTION MIGHT BE USEFUL FOR CLASSES - CHECK TOP */
                                                         className={classNames(
                                                             active ? 'text-c-gray' : 'text-c-black',
                                                             'block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide laptop:text-c-white active:text-c-yellow'
