@@ -8,7 +8,7 @@ const Dropdown = ({ submenus, dropdown }) => {
             {submenus.map((submenu, index) => (
                 <li key={index}>
                     <Link
-                        /* href={submenu.url} */
+                        to={submenu.url}
                         target={submenu.target}
                         rel={submenu.relation}
                         className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'
@@ -17,6 +17,9 @@ const Dropdown = ({ submenus, dropdown }) => {
                     </Link>
                 </li>
             ))}
+            <li>
+                <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view' target='_blank' rel='noreferrer' className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'>Resume</a>
+            </li>
         </ul>
     );
 };

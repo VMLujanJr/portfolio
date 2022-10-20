@@ -33,12 +33,12 @@ const App = () => {
           <Header />
           <div id='sub-container'>
             <Routes>
-              {/* <Route
-              path='/'
-              element={ <Intro /> }
-            /> */}
               <Route
                 path='/'
+                element={<AboutPage />}
+              />
+              <Route
+                path='/about'
                 element={<AboutPage />}
               />
               <Route

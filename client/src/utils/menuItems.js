@@ -15,12 +15,6 @@ export const menuItems = [
                 url: '/portfolio',
                 target: '_self',
                 relation: 'no-refresher'
-            },
-            {
-                title: 'Resume',
-                url: 'https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view',
-                target: '_blank',
-                relation: 'noreferrer'
             }
         ]
     }
