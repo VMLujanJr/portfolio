@@ -912,6 +912,10 @@ video {
           animation: nav3-down 1.0s ease-out;
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1108,11 +1112,6 @@ video {
   color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
-.text-c-red {
-  --tw-text-opacity: 1;
-  color: rgb(249 64 58 / var(--tw-text-opacity));
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -1215,6 +1214,10 @@ video {
 
   .laptop\:flex {
     display: flex;
+  }
+
+  .laptop\:hidden {
+    display: none;
   }
 
   .laptop\:h-\[100px\] {

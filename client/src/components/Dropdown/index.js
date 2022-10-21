@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Dropdown = ({ submenus, dropdown }) => {
-    console.log(submenus, dropdown, 'what the fukc?')
     return (
         <ul id='dropdown' className={`${dropdown ? 'inline' : 'hidden'}`}>
             {submenus.map((submenu, index) => (
