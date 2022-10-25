@@ -32,7 +32,8 @@ module.exports = {
       'c-transparent': 'rgba(0, 0, 0, 0.0)'
     },
     backgroundImage: {
-      'new-logo': "url('')"
+      'crumble': 'url("../src/assets/images/1080p/orbit.png")',
+      'planet': 'url("../src/assets/images/1080p/planet.jpg")'
     },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],

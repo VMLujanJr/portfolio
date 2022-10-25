@@ -626,6 +626,10 @@ video {
   z-index: 20;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -659,16 +663,16 @@ video {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-\[35px\] {
   height: 35px;
 }
 
 .h-14 {
   height: 3.5rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-\[50px\] {
@@ -695,12 +699,12 @@ video {
   width: 35px;
 }
 
-.w-14 {
-  width: 3.5rem;
-}
-
 .w-screen {
   width: 100vw;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-auto {
@@ -1017,6 +1021,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-crumble {
+  background-image: url("../src/assets/images/1080p/orbit.png");
+}
+
+.bg-planet {
+  background-image: url("../src/assets/images/1080p/planet.jpg");
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1049,6 +1069,10 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1069,6 +1093,30 @@ video {
   font-family: League Spartan, sans-serif;
 }
 
+.font-Open {
+  font-family: Open Sans, sans-serif;
+}
+
+.font-Race {
+  font-family: Racing Sans One, cursive;
+}
+
+.font-Rom {
+  font-family: Rommetto One, cursive;
+}
+
+.font-Aboreto {
+  font-family: Aboreto, cursive;
+}
+
+.font-Audiowide {
+  font-family: Audiowide, cursive;
+}
+
+.font-Bhu {
+  font-family: BhuTuko Expanded One, cursive;
+}
+
 .text-4xl {
   font-size: 2.25rem;
 }
@@ -1087,6 +1135,10 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
 }
 
 .font-bold {
@@ -1269,6 +1321,10 @@ video {
             animation: nav3-slide 1.0s ease-out;
   }
 
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
+
   .laptop\:rounded-none {
     border-radius: 0px;
   }
@@ -1285,14 +1341,13 @@ video {
     font-size: 1.25rem;
   }
 
+  .laptop\:text-4xl {
+    font-size: 2.25rem;
+  }
+
   .laptop\:text-c-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-c-black {
-    --tw-text-opacity: 1;
-    color: rgb(3 14 18 / var(--tw-text-opacity));
   }
 
   .laptop\:shadow-none {

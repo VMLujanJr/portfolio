@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Dropdown from '../Dropdown';
 
 const MenuItems = ({ items }) => {
-    const [dropdown, setDropdown] = useState(false);
+    const [dropdown, setDropdown] = useState(null);
     let ref = useRef(); // access the DOM elements of the dropdown by passing a reference to the target node
 
     /* if you click outside of the menu, the menu items will collapse */
@@ -69,11 +69,11 @@ const MenuItems = ({ items }) => {
     }); */
 
     const onMouseEnter = () => {
-        window.innerWidth >= 1024 && setDropdown(true); 
+        window.innerWidth < 1024 && setDropdown(true); 
     };
 
     const onMouseLeave = () => {
-        window.innerWidth >= 1024 && setDropdown(false);
+        window.innerWidth < 1024 && setDropdown(false);
     };
 
     return (

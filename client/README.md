@@ -256,3 +256,17 @@ Express.js
 React
 Node.js
 adaaaaaa
+
+Possible bugs 
+
+- On PAGE RELOAD, the NAVIGATION MENU DOES NOT SHOW UP. WHY? POSSIBLE EXPLANATION: 
+- On PAGE RESIZE, we need to LIMIT the event to every second or 1000 miliseconds
+
+Dimensions for Images
+4K or 2160p: 3840 x 2160
+2K or 1440p: 2560 x 1440
+1080p: 1920 x 1080
+720p: 1280 x 720
+480p: 854 x 480
+360p: 640 x 360
+240p: 426 x 240

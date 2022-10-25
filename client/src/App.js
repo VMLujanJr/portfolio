@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 /* Components */
-import Footer from './components/Footer';
 import Header from './components/Header';
 
 /* Pages */
@@ -30,7 +29,6 @@ const App = () => {
         <IntroPage />
       ) : (
         <div id='main-container'>
-          <Header />
           <div id='sub-container'>
             <Routes>
               <Route
@@ -51,7 +49,6 @@ const App = () => {
               />
             </Routes>
           </div>
-          <Footer />
         </div>
       )
       }
