@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 const AboutPage = () => {
     return (
         <>
-            <div className='bg-planet bg-fixed bg-center w-full h-full'>
+            <div className='bg-planet bg-fixed bg-no-repeat bg-center w-full h-full'>
                 <Header />
                 <About />
             </div>

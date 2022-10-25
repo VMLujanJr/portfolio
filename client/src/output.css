@@ -635,8 +635,21 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -677,6 +690,18 @@ video {
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .max-h-full {
@@ -962,6 +987,18 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .divide-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
@@ -996,14 +1033,14 @@ video {
   border-width: 1px;
 }
 
-.bg-c-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 222 103 / var(--tw-bg-opacity));
-}
-
 .bg-c-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(91 204 246 / var(--tw-bg-opacity));
+}
+
+.bg-c-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 222 103 / var(--tw-bg-opacity));
 }
 
 .bg-c-black {
@@ -1021,10 +1058,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-crumble {
-  background-image: url("../src/assets/images/1080p/orbit.png");
-}
-
 .bg-planet {
   background-image: url("../src/assets/images/1080p/planet.jpg");
 }
@@ -1035,6 +1068,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -1093,40 +1130,36 @@ video {
   font-family: League Spartan, sans-serif;
 }
 
-.font-Open {
-  font-family: Open Sans, sans-serif;
+.font-Eagle {
+  font-family: Eagle Lake, cursive;
 }
 
-.font-Race {
-  font-family: Racing Sans One, cursive;
+.font-Engage {
+  font-family: Engagement, cursive;
 }
 
-.font-Rom {
-  font-family: Rommetto One, cursive;
+.font-Ephesis {
+  font-family: Ephesis, cursive;
 }
 
-.font-Aboreto {
-  font-family: Aboreto, cursive;
-}
-
-.font-Audiowide {
-  font-family: Audiowide, cursive;
-}
-
-.font-Bhu {
-  font-family: BhuTuko Expanded One, cursive;
+.font-Gravitas {
+  font-family: Gravitas One, cursive;
 }
 
 .text-4xl {
   font-size: 2.25rem;
 }
 
-.text-sm {
-  font-size: .875rem;
+.text-2xl {
+  font-size: 1.5rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-sm {
+  font-size: .875rem;
 }
 
 .text-7xl {
@@ -1135,10 +1168,6 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
 }
 
 .font-bold {
@@ -1249,6 +1278,14 @@ video {
   .tablet\:max-w-md {
     max-width: 28rem;
   }
+
+  .tablet\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .tablet\:text-5xl {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1337,12 +1374,16 @@ video {
     font-size: 5rem;
   }
 
-  .laptop\:text-xl {
-    font-size: 1.25rem;
-  }
-
   .laptop\:text-4xl {
     font-size: 2.25rem;
+  }
+
+  .laptop\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .laptop\:text-6xl {
+    font-size: 4rem;
   }
 
   .laptop\:text-c-white {
@@ -1354,5 +1395,11 @@ video {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:text-7xl {
+    font-size: 5rem;
   }
 };
