@@ -103,7 +103,7 @@ const data = [
 
 const TechnologyList = () => {
     return (
-        <section className='bg-c-yellow space-y-10 flex flex-col justify-center items-center'>
+        <section className='space-y-10 flex flex-col justify-center items-center'>
             <h2 className='mt-10 font-bold text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Technologies</h2>
             <div className='w-4/5 grid grid-cols-3 place-items-center gap-5 max-w-xl'>
                 {data.map(({ id, name, website, image }) => (

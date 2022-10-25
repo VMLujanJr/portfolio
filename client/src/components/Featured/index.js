@@ -46,39 +46,41 @@ const Featured = () => {
         <section id='featured' className=''>
             <ul id='container' className='customViewHeight flex flex-col items-center'>
                 {projectData.map(({ id, name, description, website, alt, technologies, image }) => (
-                    <li key={id} className='max-w-xs flex-col flex justify-center items-center'>
-                        <h2 className='flex text-4xl font-bold'>{name}</h2>
-                        <a href={website} alt={alt} target='_blank' rel='noreferrer' className=''>
-                            <img
-                                data-aos='zoom-in'
-                                data-aos-offset='0'
+                    <li key={id} className='flex flex-col justify-center items-center max-w-xs tablet:max-w-md laptop:max-w-xl desktop:max-w-2xl'>
+                        <h2 className='font-bold flex text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>{name}</h2>
+                        <div className='flex flex-col justify-center items-center laptop:relative'>
+                            <a href={website} alt={alt} target='_blank' rel='noreferrer'>
+                                <img
+                                    data-aos='zoom-in'
+                                    data-aos-offset='0'
+                                    data-aos-duration='2000'
+                                    data-aos-easing='ease-out'
+                                    data-aos-delay=''
+                                    data-aos-anchor=''
+                                    data-aos-achor-placement='top-bottom'
+                                    data-aos-once='false'
+                                    src={image}
+                                    alt={alt}
+                                    className='flex my-2 p-1 ring-c-black ring-4 rounded-3xl'
+                                ></img>
+                            </a>
+                            <div
+                                data-aos='fade-left'
+                                data-aos-offset=''
                                 data-aos-duration='2000'
                                 data-aos-easing='ease-out'
                                 data-aos-delay=''
                                 data-aos-anchor=''
                                 data-aos-achor-placement='top-bottom'
                                 data-aos-once='false'
-                                src={image}
-                                alt={alt}
-                                className='flex my-2 p-1 ring-c-black ring-4 rounded-3xl'
-                            ></img>
-                        </a>
-                        <div
-                            data-aos='fade-left'
-                            data-aos-offset=''
-                            data-aos-duration='2000'
-                            data-aos-easing='ease-out'
-                            data-aos-delay=''
-                            data-aos-anchor=''
-                            data-aos-achor-placement='top-bottom'
-                            data-aos-once='false'
-                            className='laptop:relative w-4/5 laptop:right-32 laptop:top-28'
-                        >
-                            <p className='font-Nanum text-sm flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 laptop:max-w-xl'>
-                                {description}
-                            </p>
-                            <div className='font-Nanum font-bold italic text-sm flex justify-center'>
-                                {technologies}
+                                className='w-4/5 laptop:absolute laptop:-bottom-24 laptop:-left-24'
+                            >
+                                <p className='font-Nanum text-sm tablet:text-md laptop:text-lg desktop:text-xl flex flex-wrap text-justify bg-c-yellow rounded-lg p-3 laptop:max-w-xl'>
+                                    {description}
+                                </p>
+                                <div className='font-Nanum font-bold italic text-sm tablet:text-md laptop:text-lg desktop:text-xl flex justify-center'>
+                                    {technologies}
+                                </div>
                             </div>
                         </div>
                     </li>
