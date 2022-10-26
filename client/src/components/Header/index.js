@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <div id='navContainer' className='inline-flex w-screen'>
-                <NavigationBar className='z-50' />
-                <Link href='/' className='z-0 text-center text-4xl w-full'>Victor Lujan</Link>
+            <div id='navContainer' className='flex items-center w-screen'>
+                <NavigationBar />
+                <div className='text-center w-screen'>
+                    <Link href='/' className='font-League font-extrabold text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Victor Lujan</Link>
+                </div>
             </div>
         </header>
     );

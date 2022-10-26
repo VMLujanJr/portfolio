@@ -14,6 +14,7 @@ const AboutPage = () => {
             </div>
             <TechnologyList />
             <Footer />
+            <div className='flex justify-center'>&copy; {new Date().getFullYear()} All rights reserved.</div>
         </>
     );
 };

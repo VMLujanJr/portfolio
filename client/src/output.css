@@ -602,8 +602,8 @@ video {
   right: 2.5rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.top-0 {
+  top: 0px;
 }
 
 .left-2\.5 {
@@ -612,6 +612,10 @@ video {
 
 .left-2 {
   left: 0.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-0 {
@@ -671,8 +675,8 @@ video {
   height: 100%;
 }
 
-.h-\[35px\] {
-  height: 35px;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-14 {
@@ -699,8 +703,8 @@ video {
   width: 80%;
 }
 
-.w-\[35px\] {
-  width: 35px;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-screen {
@@ -717,6 +721,10 @@ video {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
 .max-w-sm {
@@ -972,6 +980,18 @@ video {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1031,6 +1051,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-c-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 64 58 / var(--tw-bg-opacity));
+}
+
 .bg-planet {
   background-image: url("../src/assets/images/1080p/planet.jpg");
 }
@@ -1057,6 +1082,10 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-2 {
@@ -1129,6 +1158,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .italic {
@@ -1232,12 +1265,12 @@ video {
 }
 
 @media (min-width: 575px) {
-  .tablet\:h-\[45px\] {
-    height: 45px;
+  .tablet\:h-10 {
+    height: 2.5rem;
   }
 
-  .tablet\:w-\[45px\] {
-    width: 45px;
+  .tablet\:w-10 {
+    width: 2.5rem;
   }
 
   .tablet\:max-w-md {
@@ -1274,16 +1307,16 @@ video {
     display: none;
   }
 
-  .laptop\:h-\[55px\] {
-    height: 55px;
+  .laptop\:h-12 {
+    height: 3rem;
   }
 
   .laptop\:h-\[100px\] {
     height: 100px;
   }
 
-  .laptop\:w-\[55px\] {
-    width: 55px;
+  .laptop\:w-12 {
+    width: 3rem;
   }
 
   .laptop\:w-\[100px\] {
@@ -1372,12 +1405,12 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .desktop\:h-\[65px\] {
-    height: 65px;
+  .desktop\:h-14 {
+    height: 3.5rem;
   }
 
-  .desktop\:w-\[65px\] {
-    width: 65px;
+  .desktop\:w-14 {
+    width: 3.5rem;
   }
 
   .desktop\:max-w-2xl {
