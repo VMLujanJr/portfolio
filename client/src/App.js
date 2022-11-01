@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-/* Components */
-import Header from './components/Header';
-
 /* Pages */
 import AboutPage from './pages/AboutPage.js';
 import FeaturedPage from './pages/FeaturedPage.js';

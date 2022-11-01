@@ -1018,8 +1018,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-planet {
-  background-image: url("../src/assets/images/1080p/planet.jpg");
+.bg-night-sky {
+  background-image: url("../src/assets/images/2160p/night-sky.jpg");
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -1164,6 +1168,12 @@ video {
 .ring-c-black {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(3 14 18 / var(--tw-ring-opacity));
+}
+
+.drop-shadow-3xl {
+  --tw-drop-shadow: drop-shadow(1px 1px 2px rgba(3, 14, 18, 1));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {

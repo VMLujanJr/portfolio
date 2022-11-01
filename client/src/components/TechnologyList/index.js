@@ -108,7 +108,7 @@ const TechnologyList = () => {
             <div className='w-4/5 grid grid-cols-3 place-items-center gap-5 max-w-xl'>
                 {data.map(({ id, name, website, image }) => (
                     <div key={ id } className=''>
-                        <a href={ website } alt={ name } target='_blank'>
+                        <a href={ website } alt={ name } target='_blank' rel='noreferrer'>
                             <img
                                 key={ id }
                                 src={ image }

@@ -35,7 +35,8 @@ module.exports = {
     },
     backgroundImage: {
       'crumble': 'url("../src/assets/images/1080p/orbit.png")',
-      'planet': 'url("../src/assets/images/1080p/planet.jpg")'
+      'planet': 'url("../src/assets/images/1080p/planet.jpg")',
+      'night-sky': 'url("../src/assets/images/2160p/night-sky.jpg")'
     },
     fontFamily: {
       Aboreto: ['Aboreto', 'cursive'],
@@ -87,7 +88,7 @@ module.exports = {
         'bouncey': 'bouncey 1.5s ease-out infinite'
       },
       dropShadow: {
-        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '3xl': '1px 1px 2px rgba(3, 14, 18, 1)',
         '4xl': [
           '0 2px 2px rgba(200, 200, 150, 0.95)'
         ]
