@@ -1,21 +1,17 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { contact } from '../../utils/contact.js';
 
 const Contact = () => {
-    /* const [name, setName] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState(''); */
+    const [message, setMessage] = useState('');
 
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        // generate a five digit number for the contact_number variable
-        /* this.contact_number.value = Math.random() * 100000 | 0; */
 
         /* service_xxx is the SERVICE ID,  */
         emailjs.sendForm('service_zs9az3f', 'contact_form', form.current, 'o7SrFvjc5akj8ZSZS')
@@ -32,9 +28,9 @@ const Contact = () => {
                 });
 
                 // empty useState
-                /* setName('');
+                setName('');
                 setEmail('');
-                setMessage(''); */
+                setMessage('');
 
                 console.log('SUCCESS!', result.status, result.text);
             }, (error) => {
@@ -50,26 +46,28 @@ const Contact = () => {
                 });
 
                 // empty useState
-                /* setName('');
+                setName('');
                 setEmail('');
-                setMessage(''); */
+                setMessage('');
 
                 console.log('FAILED...', error);
             });
     };
 
     return (
-        <form id='contact-form' ref={form} onSubmit={sendEmail} className='absolute top-0 right-10 h-screen flex flex-col justify-center items-center'>
+        <form id='contact-form' ref={form} onSubmit={sendEmail} className='h-screen flex flex-col justify-center items-center'>
             <h2 className='font-bold text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Contact Form</h2>
             <div className='bg-c-yellow rounded-lg p-4 drop-shadow-shade flex flex-col space-y-2 w-full max-w-sm'>
                 <input type="hidden" name="contact_number" />
-                {contact.map((info, index) => (
-                    <div key={index} className='flex justify-start items-center'>
-                        <label className='w-1/'>{info.label}</label>
-                        <input type={info.type} name={info.name} placeholder={info.placeholder} value={info.value} /* onChange={(e) => setEmail(e.target.value)} */ className='flex flex-wrap text-center rounded-lg w-4/5' />
-                    </div>
-                ))}
-                <textarea type='text' name='message' placeholder="What's your message?" /* value={message} onChange={(e) => setMessage(e.target.value)} */ className='rounded-lg p-2' />
+                <div className='flex justify-start items-center'>
+                    <label className='w-1/'>Name</label>
+                    <input type='text' name='user_name' placeholder="What's your name?" value={name} onInput={(e) => setName(e.target.value)} className='flex flex-wrap text-center rounded-lg w-4/5' />
+                </div>
+                <div className='flex justify-start items-center'>
+                    <label className='w-1/'>E-mail</label>
+                    <input type='email' name='user_email' placeholder="What's your e-mail?" value={email} onInput={(e) => setEmail(e.target.value)} className='flex flex-wrap text-center rounded-lg w-4/5' />
+                </div>
+                <textarea type='text' name='message' placeholder="What's your message?" value={message} onChange={(e) => setMessage(e.target.value)} className='rounded-lg p-2' />
                 <button value="Send" className='hover:font-bold hover:text-c-white hover:bg-c-blue active:bg-c-red'>Send</button>
             </div>
         </form>
