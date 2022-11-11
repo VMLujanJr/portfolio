@@ -270,5 +270,3 @@ Dimensions for Images
 480p: 854 x 480
 360p: 640 x 360
 240p: 426 x 240
-
-sdsas
