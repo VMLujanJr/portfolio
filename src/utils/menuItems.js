@@ -15,6 +15,12 @@ export const menuItems = [
                 url: '/portfolio',
                 target: '_self',
                 relation: 'no-refresher'
+            },
+            {
+                title: 'Contact',
+                url: '/contact',
+                target: '_self',
+                relation: 'no-refresher'
             }
         ]
     }
