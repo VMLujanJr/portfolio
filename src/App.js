@@ -34,6 +34,10 @@ const App = () => {
                 element={<AboutPage />}
               />
               <Route
+                path='/professional-portfolio'
+                element={<AboutPage />}
+              />
+              <Route
                 path='/about'
                 element={<AboutPage />}
               />
