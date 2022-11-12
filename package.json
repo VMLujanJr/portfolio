@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "homepage": "https://vmlujanjr.github.io/professional-portfolio/",
+  "name": "professional-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
