@@ -615,6 +615,14 @@ video {
   right: 2.5rem;
 }
 
+.-bottom-2 {
+  bottom: -0.5rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
 .left-2\.5 {
   left: 0.625rem;
 }
@@ -696,8 +704,16 @@ video {
   max-height: 100%;
 }
 
+.min-h-screen-80 {
+  min-height: 80vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-full {
@@ -989,8 +1005,19 @@ video {
   border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
 }
 
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
   border-style: solid;
+}
+
+.divide-c-gray > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(54 54 54 / var(--tw-divide-opacity));
 }
 
 .rounded-xl {
@@ -1017,6 +1044,11 @@ video {
   border-width: 1px;
 }
 
+.bg-c-shade {
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 57 57 / var(--tw-bg-opacity));
+}
+
 .bg-c-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(91 204 246 / var(--tw-bg-opacity));
@@ -1025,6 +1057,10 @@ video {
 .bg-c-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(252 222 103 / var(--tw-bg-opacity));
+}
+
+.bg-c-tblack {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .bg-c-black {
@@ -1040,6 +1076,11 @@ video {
 .bg-c-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-c-alabaster {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 234 222 / var(--tw-bg-opacity));
 }
 
 .bg-night-sky {
@@ -1130,8 +1171,8 @@ video {
   font-size: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
+.text-3xl {
+  font-size: 1.875rem;
 }
 
 .text-xl {
@@ -1154,13 +1195,12 @@ video {
   font-weight: 800;
 }
 
-.italic {
-  font-style: italic;
+.font-semibold {
+  font-weight: 600;
 }
 
-.text-c-black {
-  --tw-text-opacity: 1;
-  color: rgb(3 14 18 / var(--tw-text-opacity));
+.italic {
+  font-style: italic;
 }
 
 .text-c-white {
@@ -1168,9 +1208,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-c-yellow {
+.text-c-black {
   --tw-text-opacity: 1;
-  color: rgb(252 222 103 / var(--tw-text-opacity));
+  color: rgb(3 14 18 / var(--tw-text-opacity));
 }
 
 .text-c-gray {
@@ -1201,12 +1241,6 @@ video {
 .ring-c-black {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(3 14 18 / var(--tw-ring-opacity));
-}
-
-.drop-shadow-3xl {
-  --tw-drop-shadow: drop-shadow(1px 1px 2px rgba(3, 14, 18, 1));
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .drop-shadow-shade {
@@ -1260,6 +1294,10 @@ video {
   font-weight: 700;
 }
 
+.hover\:font-extrabold:hover {
+  font-weight: 800;
+}
+
 .hover\:text-c-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1268,6 +1306,11 @@ video {
 .hover\:text-c-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(91 204 246 / var(--tw-text-opacity));
+}
+
+.hover\:ring-c-yellow:hover {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(252 222 103 / var(--tw-ring-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1301,6 +1344,10 @@ video {
 
   .tablet\:max-w-md {
     max-width: 28rem;
+  }
+
+  .tablet\:text-4xl {
+    font-size: 2.25rem;
   }
 
   .tablet\:text-5xl {
@@ -1410,8 +1457,8 @@ video {
     font-size: 5rem;
   }
 
-  .laptop\:text-4xl {
-    font-size: 2.25rem;
+  .laptop\:text-5xl {
+    font-size: 3rem;
   }
 
   .laptop\:text-6xl {
@@ -1439,12 +1486,20 @@ video {
     width: 3.5rem;
   }
 
+  .desktop\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .desktop\:max-w-2xl {
     max-width: 42rem;
   }
 
   .desktop\:text-xl {
     font-size: 1.25rem;
+  }
+
+  .desktop\:text-6xl {
+    font-size: 4rem;
   }
 
   .desktop\:text-7xl {

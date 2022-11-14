@@ -22,6 +22,7 @@ module.exports = {
       'c-red': '#F9403A'
     },
     backgroundColor: {
+      'c-alabaster': '#edeade',
       'c-yellow': '#fcde67',
       'c-blue': '#5bccf6',
       'c-black': '#030e12',
@@ -29,7 +30,7 @@ module.exports = {
       'c-white': '#FFFFFF',
       'c-red': '#F9403A',
       'c-shade': '#393939',
-      'c-tblack': 'rgba(0, 0, 0, 0.7)',
+      'c-tblack': 'rgba(0, 0, 0, 0.4)',
       'c-tyellow': 'rgba(252, 222, 103, 0.8)',
       'c-transparent': 'rgba(0, 0, 0, 0.0)'
     },
@@ -70,6 +71,16 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+    },
+    minHeight: {
+      '0': '0px',
+      'full': '100%',
+      'screen': '100vh',
+      'screen-80': '80vh',
+      'screen-90': '90vh',
+      'min': 'min-content',
+      'max': 'max-content',
+      'fit': 'fit-content',
     },
     extend: {
       animation: {

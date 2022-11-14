@@ -8,7 +8,11 @@ const Header = () => {
             <div id='navContainer' className='flex items-center w-screen'>
                 <NavigationBar />
                 <div className='text-center w-screen'>
-                    <Link href='/' className='drop-shadow-3xl font-League font-extrabold text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl text-c-yellow'>Victor Lujan</Link>
+                    <Link
+                    to='/'
+                    target='_self'
+                    rel='no-refresher'
+                    className='font-League hover:text-c-blue active:text-c-yellow text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>Victor Lujan</Link>
                 </div>
             </div>
         </header>

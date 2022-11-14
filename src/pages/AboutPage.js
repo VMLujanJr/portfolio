@@ -8,13 +8,15 @@ import Footer from '../components/Footer';
 const AboutPage = () => {
     return (
         <>
-            <div className='bg-night-sky bg-fixed bg-cover bg-no-repeat bg-center w-full h-full'>
-                <Header />
-                <About />
+            <div className='bg-c-alabaster'>
+                <div className='text-c-white bg-night-sky bg-fixed bg-cover bg-no-repeat bg-center w-full h-full'>
+                    <Header />
+                    <About />
+                </div>
+                <TechnologyList />
+                <Footer />
+                <div className='flex justify-center'>&copy; {new Date().getFullYear()} All rights reserved.</div>
             </div>
-            <TechnologyList />
-            <Footer />
-            <div className='flex justify-center'>&copy; {new Date().getFullYear()} All rights reserved.</div>
         </>
     );
 };

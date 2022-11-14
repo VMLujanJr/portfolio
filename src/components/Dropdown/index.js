@@ -10,14 +10,14 @@ const Dropdown = ({ submenus, dropdown }) => {
                         to={submenu.url}
                         target={submenu.target}
                         rel={submenu.relation}
-                        className='drop-shadow-3xl text-c-white hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'
+                        className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'
                     >
                         {submenu.title}
                     </Link>
                 </li>
             ))}
             <li>
-                <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view' target='_blank' rel='noreferrer' className='text-c-white hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow drop-shadow-3xl'>Resume</a>
+                <a href='https://drive.google.com/file/d/1BWV-UVg0WKeqpTIT8HTKvrcJ6F-1EHg-/view' target='_blank' rel='noreferrer' className='hover:text-c-blue block px-4 py-2 text-xl animate-nav3-down laptop:animate-nav3-slide active:text-c-yellow'>Resume</a>
             </li>
         </ul>
     );

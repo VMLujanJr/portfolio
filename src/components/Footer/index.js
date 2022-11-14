@@ -4,7 +4,7 @@ import { contactInfo } from '../../utils/contactInfo.js';
 const Footer = () => {
     
     return (
-        <footer className='z-20'>
+        <footer id='footer' className='z-20'>
             <ul className='mt-10 flex justify-center items-center space-x-10 p-2'>
                 {contactInfo.map((info, index) => (
                     <li key={index}>
