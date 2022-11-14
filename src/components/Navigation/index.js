@@ -35,7 +35,7 @@ const Navigation = (props) => {
             <Menu as='div' className='laptop:flex bg-c-gray text-c-black justify-start relative p-2'>
                 {({ open }) => (
                     <>
-                        <Menu.Button className='inline-flex justify-start rounded-md border bg-white px-4 py-2 text-lg'>
+                        <Menu.Button className='inline-flex justify-start rounded-md border px-4 py-2 text-lg'>
                             <Bars3Icon className='w-14 h-14 hover:text-c-blue active:text-c-blue' aria-hidden='true' />
                         </Menu.Button>
 

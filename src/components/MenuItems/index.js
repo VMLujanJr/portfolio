@@ -10,8 +10,6 @@ const MenuItems = ({ items }) => {
         width: window.innerWidth
     });
 
-    /* const [onPageReload, setOnPageReload] = useState(Boolean); */
-
     /* if you click outside of the menu, the menu items will collapse */
     useEffect(() => {
         const handler = (event) => {
@@ -71,7 +69,7 @@ const MenuItems = ({ items }) => {
                         rel={items.relation}
                         aria-expanded={dropdown ? "true" : "false"}
                         onClick={() => setDropdown((prev) => !prev)}
-                        className='text-c-white laptop:hidden inline-flex justify-start rounded-md border px-4 py-2 text-lg'
+                        className='laptop:hidden inline-flex justify-start rounded-md border px-4 py-2 text-lg'
                     >
                         {items.icon}
                     </button>
