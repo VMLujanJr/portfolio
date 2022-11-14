@@ -10,14 +10,6 @@ const MenuItems = ({ items }) => {
         width: window.innerWidth
     });
 
-/*     useEffect(() => {
-        if (dimensions.width >= 1024) {
-            setDropdown(true);
-        } else if (dimensions.width < 1024) {
-            setDropdown(false);
-        }
-    }); */
-
     /* const [onPageReload, setOnPageReload] = useState(Boolean); */
 
     /* if you click outside of the menu, the menu items will collapse */
@@ -64,39 +56,10 @@ const MenuItems = ({ items }) => {
         }
     }, [dimensions]);
 
-/*     useEffect(() => {
-        if (dimensions.width >= 1024) {
-            setDropdown(true);
-        }
-    }, [onPageReload]);
-
-    useEffect(() => {
-        const handlePageReload = () => {
-            setOnPageReload(true);
-            console.log('reloaded');
-        };
-
-        window.addEventListeneer('load', handlePageReload);
-
-        return () => {
-            window.removeEventListener('load', handlePageReload);
-        };
-    }); */
-
-    const onMouseEnter = () => {
-        window.innerWidth < 1024 && setDropdown(true);
-    };
-
-    const onMouseLeave = () => {
-        window.innerWidth < 1024 && setDropdown(false);
-    };
-
     return (
         <li
             id='menuItem'
             ref={ref}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
         >
             {items.submenu && (
                 <>
