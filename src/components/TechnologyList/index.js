@@ -13,6 +13,8 @@ import ReactLogo from '../../assets/technologies/logos/react.svg';
 import TailwindCSSLogo from '../../assets/technologies/logos/tailwindcss.svg';
 import MarkdownLogo from '../../assets/technologies/logos/markdown.svg';
 import MySQLLogo from '../../assets/technologies/logos/mysql.svg';
+import AWSLogo from '../../assets/technologies/logos/aws.svg';
+import CSharpLogo from '../../assets/technologies/logos/c-sharp.svg';
 
 const data = [
     {
@@ -98,6 +100,18 @@ const data = [
         name: 'MySQL',
         website: 'https://www.mysql.com/',
         image: MySQLLogo
+    },
+    {
+        id: '15',
+        name: 'C#',
+        website: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+        image: CSharpLogo
+    },
+    {
+        id: '16',
+        name: 'AWS',
+        website: 'https://aws.amazon.com/',
+        image: AWSLogo
     },
 ];
 

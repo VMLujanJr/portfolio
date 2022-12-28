@@ -16,33 +16,33 @@ const Featured = () => {
         {
             id: '1',
             name: 'Currex',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam, ad facere assumenda dolorum voluptates facilis illo, minima quisquam cupiditate ipsum nemo! Explicabo eos, id quod ea corporis quisquam asperiores!',
+            description: 'Currex is a foreign currency exchange application that uses a simple conversion tool to convert currency. The application uses an exchange rate API to obtain real-time exchange rates. It also displays current Bitcoin, Litecoin, and Ethereum exchange rates. The application is hosted on GitHub Pages.',
             website: 'https://vmlujanjr.github.io/currex/',
             github: 'https://github.com/VMLujanJr/currex',
             alt: 'currex website',
-            technologies: 'Markdown, JavaScript, HTML, CSS',
+            technologies: 'HTML, CSS, Markdown, JavaScript, jQuery, TailwindCSS, exchangerateapi, GitHub Pages',
             image: CurrexImg
         },
         {
             id: '2',
-            name: 'Slayers',
+            name: 'Deep Thoughts',
+            description: 'Deep Thoughts is a social media application that allows users to share their thoughts and images using endpoints to communicate with a database. You can signup to create an account and login to post thoughts and images. The application is hosted on Vercel.',
+            website: 'http://18.191.136.186/',
+            github: 'https://github.com/VMLujanJr/deep-thoughts',
+            alt: 'deepthoughts website',
+            technologies: 'HTML, CSS, Markdown, JavaScript, DynamoDB, AWS',
+            image: DeepThoughtsImg
+        },
+        {
+            id: '3',
+            name: 'Mini-Factory',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam, ad facere assumenda dolorum voluptates facilis illo, minima quisquam cupiditate ipsum nemo! Explicabo eos, id quod ea corporis quisquam asperiores!',
-            website: 'https://fierce-temple-92608.herokuapp.com/',
+            website: 'https://mini-factory.vercel.app/',
             github: 'https://github.com/VMLujanJr/mini-factory',
             alt: 'slayers website',
             technologies: 'Markdown, JavaScript, HTML, CSS',
             image: SlayersImg
         },
-        {
-            id: '3',
-            name: 'DeepThoughts',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam, ad facere assumenda dolorum voluptates facilis illo, minima quisquam cupiditate ipsum nemo! Explicabo eos, id quod ea corporis quisquam asperiores!',
-            website: 'https://agile-chamber-28404.herokuapp.com/profile',
-            github: 'https://github.com/VMLujanJr/deep-thoughts',
-            alt: 'deepthoughts website',
-            technologies: 'Markdown, JavaScript, HTML, CSS',
-            image: DeepThoughtsImg
-        }
     ];
 
     return (
