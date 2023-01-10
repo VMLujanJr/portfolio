@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CurrexImg from '../../assets/images/thumbnails/currex.gif';
-import SlayersImg from '../../assets/images/thumbnails/slayers.gif';
+import JestAnotherRPGImg from '../../assets/images/thumbnails/jest-another-rpg.gif';
 import DeepThoughtsImg from '../../assets/images/thumbnails/deep-thoughts.gif';
 
 const Featured = () => {
@@ -35,19 +35,19 @@ const Featured = () => {
         },
         {
             id: '3',
-            name: 'Mini-Factory',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam, ad facere assumenda dolorum voluptates facilis illo, minima quisquam cupiditate ipsum nemo! Explicabo eos, id quod ea corporis quisquam asperiores!',
-            website: 'https://mini-factory.vercel.app/',
-            github: 'https://github.com/VMLujanJr/mini-factory',
-            alt: 'slayers website',
-            technologies: 'Markdown, JavaScript, HTML, CSS',
-            image: SlayersImg
+            name: 'Jest Another RPG',
+            description: 'Jest Another RPG is a role-playing game that is played using the command-line interface. The user creates a player character by typing their preferred name onto the terminal. Then, you are shown your statistics before you jump into a battle against a randomized enemy. You can choose to attack or take potions. The choice is yours.',
+            website: '',
+            github: 'https://github.com/VMLujanJr/just-tech-news',
+            alt: 'jest another RPG website',
+            technologies: 'HTML, CSS, Markdown, JavaScript, API, Inquirer, Jest',
+            image: JestAnotherRPGImg
         },
     ];
 
     return (
         <section id='featured' className=''>
-            <ul id='container' className='customViewHeight flex flex-col items-center divide-y-2 divide-c-gray'>
+            <ul id='container' className='customViewHeight flex flex-col items-center divide-y-2 divide-c-gray laptop:gap-y-20'>
                 {projectData.map(({ id, name, description, website, github, alt, technologies, image }) => (
                     <li key={id} className='flex flex-col justify-center items-center max-w-xs tablet:max-w-md laptop:max-w-xl desktop:max-w-2xl'>
                         <h2 className='font-bold flex text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl'>{name}</h2>

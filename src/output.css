@@ -1409,6 +1409,10 @@ video {
     flex-direction: row;
   }
 
+  .laptop\:gap-y-20 {
+    row-gap: 5rem;
+  }
+
   .laptop\:rounded-none {
     border-radius: 0px;
   }

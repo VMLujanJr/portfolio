@@ -15,6 +15,7 @@ import MarkdownLogo from '../../assets/technologies/logos/markdown.svg';
 import MySQLLogo from '../../assets/technologies/logos/mysql.svg';
 import AWSLogo from '../../assets/technologies/logos/aws.svg';
 import CSharpLogo from '../../assets/technologies/logos/c-sharp.svg';
+import DynamoDBLogo from '../../assets/technologies/logos/dynamodb.svg';
 
 const data = [
     {
@@ -112,6 +113,12 @@ const data = [
         name: 'AWS',
         website: 'https://aws.amazon.com/',
         image: AWSLogo
+    },
+    {
+        id: '17',
+        name: 'DynamoDB',
+        website: 'https://aws.amazon.com/dynamodb/',
+        image: DynamoDBLogo
     },
 ];
 
