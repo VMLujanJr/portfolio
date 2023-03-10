@@ -27,7 +27,7 @@ const Featured = () => {
             id: '2',
             name: 'Deep Thoughts',
             description: 'Deep Thoughts is a social media application that allows users to share their thoughts and images using endpoints to communicate with a database. You can signup to create an account and login to post thoughts and images. The application is hosted on Vercel.',
-            website: 'http://18.191.136.186/',
+            website: 'http://3.16.136.121/',
             github: 'https://github.com/VMLujanJr/deep-thoughts',
             alt: 'deepthoughts website',
             technologies: 'HTML, CSS, Markdown, JavaScript, DynamoDB, AWS',
